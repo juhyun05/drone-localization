@@ -1,0 +1,17 @@
+{
+  "state": "streaming",
+  "error": "",
+  "received": 104,
+  "overwritten": 0,
+  "source_gaps": null,
+  "decode_errors": 0,
+  "disconnects": 0,
+  "reconnections": 0,
+  "connection": 1,
+  "receive_fps": 27.3300323286424,
+  "last_received_at": 11905.9086558,
+  "duration_s": 7.107066399999894,
+  "consumed": 104,
+  "first_s": 3.2774835000000166,
+  "last_s": 7.014526900000419
+}

@@ -1,0 +1,110 @@
+{
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 8,
+    "opencv": "5.0.0",
+    "opencv_threads": 4,
+    "opencv_parallel_framework": "Concurrency",
+    "numpy": "2.4.6",
+    "blas": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.31.188.0",
+      "detection method": "pkgconfig",
+      "include directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-6ukx7exl/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include",
+      "lib directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-6ukx7exl/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+      "pc file directory": "D:/a/numpy-release/numpy-release/.openblas"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "OPENCV_FOR_THREADS_NUM": null
+    },
+    "input_files": {
+      "stationary.avi": {
+        "sha256": "8fb62b382c18b06669b6d1a10b29ae10f6a9d31597c2dfc5295a263fb6171e8a",
+        "bytes": 14562690
+      },
+      "stationary.csv": {
+        "sha256": "a2741840b1264d9c1ac08b76a568299e7a2026cf0f7824a5dec15638aaeca847",
+        "bytes": 66139
+      },
+      "stationary.json": {
+        "sha256": "b1fe9114bf65a4b8e224cb30cf581379206c139b3c4c3a5399b1ec0dd4e8a681",
+        "bytes": 526
+      }
+    },
+    "code_sha256": {
+      "localization/camera_interface.py": "ce7efbffaea6a30b5784292f12597f38e99692c7ff10bb9e35b36e4b5d1362f6",
+      "localization/camera_preprocessing.py": "67933701512c14ac83c9e8c4041abbd245a2b4beca34c676d2207965e655c33c",
+      "localization/camera_recording.py": "9baffe428816ca7e73b26160fdf904eb117957dd1773214ba0cdc5f45adea097",
+      "localization/camera_simulator.py": "2f85dbae0f5ebef3079813096948ec61c80a3dc6d7d04c8946446f50ba5439ed",
+      "localization/camera_stream.py": "ac20c884846e80dce09b4858e32125566868a5a16378cddf8ea52463171ce9cc",
+      "localization/frame_scheduler.py": "392ebd01c626608a17f3339b712a9e0e74ec8af735b9e2b4868a8f287b818f80",
+      "localization/illumination_correction.py": "4bd28623ce805e195170ffb240a59eb2470b66ee0b75703f2d044c0d3b018077",
+      "localization/image_processing.py": "89eaae8ae502f317f0ee7f8ca16bcb2c62618774b1bb2ae5c838e5d228abde3f",
+      "localization/kalman_filter.py": "1d620b0dfcec3b14836c7227e68e93cdf3d6b7679530e8a07986d05a02858a49",
+      "localization/lighting_pipeline.py": "27ce27b4d4a5f0aab6ef03a35bd646fe890bf1446f8944d1143261655282c502",
+      "localization/live_localization.py": "6af99e211d3419169a85224c65ff9f45cb6a8084c6848a0f39b7c9c99dcf0688",
+      "localization/map_loader.py": "a52a91d70b926b678b787dcbc44f6dbcbc774474e875ff622c132bc6d2ca4e03",
+      "localization/map_matching.py": "092433250ffad853ab2acbd90073e345bfe6a8e26f38cde9a3eb8a6c870e8b1a",
+      "localization/random_view.py": "0f343d57a5be17248482afe8f2839c60dca1a4d7c624ba39e3b30329904b71d5",
+      "localization/scale_cli.py": "5b36ed3522db37d88f37b5a8d3d8cd2242ba90f6787ab681feda3a92093c1697",
+      "localization/shadow_detection.py": "405fded38fa684fa2fddd712c094201f6f31f0e5e3f8a582dc0ae922e6c68428",
+      "localization/tracking_manager.py": "98140ef541b8256aff0358aefd69ab09e98f96516e96b83e5e778088ab281793",
+      "main.py": "97b6d3f0c471995ae709bd119c1e5b11e69abc6ee41ee1e3fa88439592e094d1",
+      "simulation/drone_trajectory.py": "cc18fcaa30b13a998cb6c00424c339cab1d42f80c68763e8f2f69cf27e3d1718",
+      "simulation/lighting.py": "5c42b8351559eb38b9a02a62e057aea0d8d7bd77bd4dd504cb66b2174e05ad40",
+      "simulation/playback.py": "21a92b52b463ca91ed1230250df032c4a73b27154532292531c3d67999cfc02b",
+      "tools/benchmark_environment.py": "559580db4c3419fda7f20d120d59636afa1913a15dea29cbd22361af48241e40",
+      "tools/benchmark_live_pipeline.py": "624494c1c7eb90ad89b9444b90fc71a2078c84bb852f9756a9872fbe34309bf6",
+      "tools/calibrate_camera.py": "9298dbaa369d86492d495b689b9b0d7980096d1719ea8b9f077a42d324ca3589",
+      "tools/generate_performance_fixture.py": "b6e84864209497273b4372e2345ea2255f2017db9e32e3eabd322d5747272080",
+      "tools/inspect_camera_frame.py": "aa74e6d26a16c58232eb0180ca6fba96b914d3fc71a8aad5e4054ed9ae349e24",
+      "tools/profile_localization.py": "fd867d2a531ce64c1bdf4a80ac1984e27a9ff93e9393e354ed867765eb20464e",
+      "tools/test_camera_stream.py": "679bdc09924f0d36776cb8ce819f213eab26dbcdd28f23d47173c956498bc3dc"
+    }
+  },
+  "samples": 24,
+  "stages_ms": {
+    "hsv": {
+      "mean": 9.396183333440908,
+      "p95": 12.126630000147998
+    },
+    "lighting": {
+      "mean": 11.923429166737757,
+      "p95": 14.96859499943639
+    },
+    "local_matching": {
+      "mean": 36.57330833338316,
+      "p95": 42.37830999986727
+    }
+  },
+  "hsv_traced_allocation_peak_bytes": 1374266,
+  "process_resources": {
+    "rss_bytes": 71946240,
+    "python_thread_count": 1,
+    "system_cpu_times": [
+      197172500000,
+      265907031250,
+      91539375000
+    ]
+  },
+  "candidate_counts": {
+    "global": {
+      "transforms": 690,
+      "score_grids": 690,
+      "xy_candidates": 5551890
+    },
+    "local": {
+      "transforms": 39,
+      "score_grids": 39,
+      "xy_candidates": 10878
+    }
+  },
+  "confidence_weighted": false
+}

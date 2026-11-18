@@ -1,0 +1,561 @@
+{
+  "input_kind": "video_replay",
+  "input": "C:\\Users\\82109\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\#!sandbox.{2bbafa30-485e-440e-a7eb-f14fc0a41fce}\\Temp\\kaist-timing-d8fabf96d7b442719c08f05c021733c7.avi",
+  "scenario": "stationary",
+  "requested_seconds_per_mode": 60,
+  "max_frame_age_ms": 300,
+  "ground_truth_xy": [
+    1.73,
+    2.02
+  ],
+  "truth_yaw_deg": 37.0,
+  "settings": {
+    "camera_config": "C:\\Users\\82109\\Desktop\\kaist\\3-1\\공설\\구현\\KAIST_Drone_Localization\\config\\camera_config.yaml",
+    "map": "C:\\Users\\82109\\Desktop\\kaist\\3-1\\공설\\구현\\KAIST_map_roads_gate_2p5m\\KAIST_model_features_2p5m.json",
+    "search": {
+      "pixels_per_m": 80.0,
+      "nominal_span_m": 0.6745085168424266,
+      "scale_factors": [
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2
+      ],
+      "yaw_step_deg": 5.0,
+      "local_radius_m": 0.25,
+      "min_frame_fraction": 0.0125,
+      "min_foreground": 35,
+      "min_score": 0.36,
+      "min_margin": 0.07,
+      "separation_m": 0.08,
+      "separation_deg": 20.0,
+      "auto_scale": true,
+      "scale_min": 0.5,
+      "scale_max": 2.0,
+      "scale_steps": 15,
+      "scale_refine_steps": 5,
+      "min_effective_fraction": 0.35
+    },
+    "colors": {
+      "hue_tolerance": 7,
+      "saturation_tolerance": 55,
+      "value_tolerance": 95,
+      "morph_size": 3,
+      "min_area_px": 12
+    },
+    "global_only": false,
+    "lighting": {
+      "method": "combined",
+      "clip_limit": 2,
+      "tile_grid_size": [
+        8,
+        8
+      ]
+    },
+    "shadow_aware": true,
+    "shadow_debug": false
+  },
+  "modes": [
+    {
+      "elapsed_s": 60.00462440000001,
+      "camera_receive_fps": 25.014738697372792,
+      "localization_fps": 10.68250999667952,
+      "received_frame_count": 1501,
+      "processed_frame_count": 641,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 859,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.5722851432378414,
+      "matching_attempt_count": 641,
+      "matching_success_count": 641,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 641,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 641,
+        "mean": 93.1259107644362,
+        "median": 90.07229999997435,
+        "p95": 108.0191000000923,
+        "max": 754.1877999997268
+      },
+      "frame_age_ms": {
+        "count": 641,
+        "mean": 22.21507067082635,
+        "median": 22.111199999926612,
+        "p95": 43.54520000015327,
+        "max": 47.81079999975191
+      },
+      "receive_to_result_ms": {
+        "count": 641,
+        "mean": 115.34098143526255,
+        "median": 113.85620000010022,
+        "p95": 138.76950000030774,
+        "max": 754.6359999996639
+      },
+      "position_error_m": {
+        "count": 641,
+        "mean": 0.0070710678118653236,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 641,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 641,
+          "mean": 0.5602865834647639,
+          "median": 0.5395000002863526,
+          "p95": 0.7648999999219086,
+          "max": 1.9845000001623703
+        },
+        "preprocessing": {
+          "count": 641,
+          "mean": 0.26722418098725825,
+          "median": 0.25529999993523234,
+          "p95": 0.3666000002340297,
+          "max": 0.5354999998417043
+        },
+        "hsv": {
+          "count": 641,
+          "mean": 31.654926365051114,
+          "median": 30.948500000249624,
+          "p95": 37.49659999994037,
+          "max": 165.8692000000883
+        },
+        "lighting": {
+          "count": 641,
+          "mean": 12.235720748820642,
+          "median": 12.05149999987043,
+          "p95": 14.112099999692873,
+          "max": 42.316399999890564
+        },
+        "global_matching": {
+          "count": 1,
+          "mean": 684.1858999996475,
+          "median": 684.1858999996475,
+          "p95": 684.1858999996475,
+          "max": 684.1858999996475
+        },
+        "local_matching": {
+          "count": 640,
+          "mean": 47.178755781257564,
+          "median": 46.04439999980059,
+          "p95": 56.48559000023851,
+          "max": 81.98719999973036
+        },
+        "tracking": {
+          "count": 641,
+          "mean": 0.3291661466459921,
+          "median": 0.3164999998261919,
+          "p95": 0.4307999997763545,
+          "max": 0.5205000002206361
+        },
+        "localization": {
+          "count": 641,
+          "mean": 92.66147129486833,
+          "median": 89.687999999569,
+          "p95": 107.6932000000852,
+          "max": 753.7544000001617
+        },
+        "replay_delivery_lag": {
+          "count": 641,
+          "mean": 6.862248674016383,
+          "median": 6.313200000022334,
+          "p95": 14.315500000066095,
+          "max": 16.294100000322942
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 377.7573433156928,
+      "error": null,
+      "stream_status": null,
+      "timestamps_preserved": true
+    },
+    {
+      "elapsed_s": 60.00527280000006,
+      "camera_receive_fps": 24.997803193055372,
+      "localization_fps": 8.79922672395549,
+      "received_frame_count": 1500,
+      "processed_frame_count": 528,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 971,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.6473333333333333,
+      "matching_attempt_count": 528,
+      "matching_success_count": 528,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 528,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 528,
+        "mean": 106.13310928030297,
+        "median": 106.78700000016761,
+        "p95": 125.94657499982983,
+        "max": 1062.7173000002585
+      },
+      "frame_age_ms": {
+        "count": 528,
+        "mean": 22.042657196970705,
+        "median": 20.892000000003463,
+        "p95": 46.08520999972825,
+        "max": 49.77150000013353
+      },
+      "receive_to_result_ms": {
+        "count": 528,
+        "mean": 128.17576647727367,
+        "median": 125.10480000014468,
+        "p95": 155.78080499990392,
+        "max": 1063.09390000024
+      },
+      "position_error_m": {
+        "count": 528,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.0070710678118653236,
+      "yaw_error_deg": {
+        "count": 528,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 528,
+          "mean": 0.5737545454642465,
+          "median": 0.5532499999389984,
+          "p95": 0.7412149999481699,
+          "max": 2.25189999991926
+        },
+        "preprocessing": {
+          "count": 528,
+          "mean": 0.37903409091200047,
+          "median": 0.36024999985784234,
+          "p95": 0.5620650003265837,
+          "max": 0.7766000003357476
+        },
+        "hsv": {
+          "count": 528,
+          "mean": 34.729869128795194,
+          "median": 35.28190000020004,
+          "p95": 44.332864999978476,
+          "max": 73.17839999996067
+        },
+        "lighting": {
+          "count": 528,
+          "mean": 13.638520643936683,
+          "median": 13.490049999973053,
+          "p95": 16.73374499998772,
+          "max": 36.58510000013848
+        },
+        "global_matching": {
+          "count": 1,
+          "mean": 1015.7503000000361,
+          "median": 1015.7503000000361,
+          "p95": 1015.7503000000361,
+          "max": 1015.7503000000361
+        },
+        "local_matching": {
+          "count": 527,
+          "mean": 54.43648766601156,
+          "median": 55.836900000031164,
+          "p95": 65.35283999987769,
+          "max": 126.88849999995
+        },
+        "tracking": {
+          "count": 528,
+          "mean": 0.36770568185533414,
+          "median": 0.3500000002532033,
+          "p95": 0.481674999923598,
+          "max": 3.186100000220904
+        },
+        "localization": {
+          "count": 528,
+          "mean": 105.37435321971644,
+          "median": 105.98740000000362,
+          "p95": 125.0546699998267,
+          "max": 1062.3955000000933
+        },
+        "replay_delivery_lag": {
+          "count": 528,
+          "mean": 7.3429793558959355,
+          "median": 7.092699999702745,
+          "p95": 14.409019999766311,
+          "max": 24.731200000132958
+        }
+      },
+      "period_ms": 100,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 355.93226233945194,
+      "error": null,
+      "stream_status": null,
+      "timestamps_preserved": true
+    },
+    {
+      "elapsed_s": 60.0005014000003,
+      "camera_receive_fps": 24.99979108507904,
+      "localization_fps": 6.283280826049865,
+      "received_frame_count": 1500,
+      "processed_frame_count": 377,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1122,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.748,
+      "matching_attempt_count": 377,
+      "matching_success_count": 377,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 377,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 377,
+        "mean": 104.44556312996544,
+        "median": 101.67260000025635,
+        "p95": 127.76694000003772,
+        "max": 1110.0765999999567
+      },
+      "frame_age_ms": {
+        "count": 377,
+        "mean": 20.237701856759326,
+        "median": 16.003899999759597,
+        "p95": 46.99153999972623,
+        "max": 48.3036999999058
+      },
+      "receive_to_result_ms": {
+        "count": 377,
+        "mean": 124.68326498672477,
+        "median": 119.68849999993836,
+        "p95": 158.8906800001496,
+        "max": 1110.5170999999245
+      },
+      "position_error_m": {
+        "count": 377,
+        "mean": 0.0070710678118653236,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 377,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 377,
+          "mean": 0.647308488068957,
+          "median": 0.5701000000044587,
+          "p95": 0.8756000001085339,
+          "max": 13.654599999881611
+        },
+        "preprocessing": {
+          "count": 377,
+          "mean": 0.46767506631448397,
+          "median": 0.46579999980167486,
+          "p95": 0.6904399999257294,
+          "max": 1.1021000000255299
+        },
+        "hsv": {
+          "count": 377,
+          "mean": 31.817076657812116,
+          "median": 31.024999999772263,
+          "p95": 42.83686000007946,
+          "max": 88.39709999983825
+        },
+        "lighting": {
+          "count": 377,
+          "mean": 13.783397347494962,
+          "median": 13.702899999771034,
+          "p95": 18.669240000053833,
+          "max": 24.71590000004653
+        },
+        "global_matching": {
+          "count": 1,
+          "mean": 1062.0186000001013,
+          "median": 1062.0186000001013,
+          "p95": 1062.0186000001013,
+          "max": 1062.0186000001013
+        },
+        "local_matching": {
+          "count": 376,
+          "mean": 54.59919095746253,
+          "median": 54.37255000015284,
+          "p95": 68.55097500010743,
+          "max": 154.13749999970605
+        },
+        "tracking": {
+          "count": 377,
+          "mean": 0.3556498673735081,
+          "median": 0.3447000003689027,
+          "p95": 0.5048400002124254,
+          "max": 0.8871999998518731
+        },
+        "localization": {
+          "count": 377,
+          "mean": 103.6972347480191,
+          "median": 100.78250000015032,
+          "p95": 126.86887999980172,
+          "max": 1109.7617999998874
+        },
+        "replay_delivery_lag": {
+          "count": 377,
+          "mean": 7.032176923133793,
+          "median": 6.541199999901437,
+          "p95": 14.35165999982928,
+          "max": 15.739100000246253
+        }
+      },
+      "period_ms": 150,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 242.49797352526667,
+      "error": null,
+      "stream_status": null,
+      "timestamps_preserved": true
+    },
+    {
+      "elapsed_s": 60.00786169999992,
+      "camera_receive_fps": 25.013389203968284,
+      "localization_fps": 4.299436651981225,
+      "received_frame_count": 1501,
+      "processed_frame_count": 258,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1243,
+      "drained_frame_count": 0,
+      "skipped_frame_ratio": 0.8281145902731513,
+      "matching_attempt_count": 258,
+      "matching_success_count": 258,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 258,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 258,
+        "mean": 206.12206860463868,
+        "median": 202.4447499998132,
+        "p95": 293.9156599997886,
+        "max": 1072.716600000149
+      },
+      "frame_age_ms": {
+        "count": 258,
+        "mean": 19.60570930233302,
+        "median": 16.238499999872147,
+        "p95": 42.46489500014831,
+        "max": 47.937499999989086
+      },
+      "receive_to_result_ms": {
+        "count": 258,
+        "mean": 225.7277779069717,
+        "median": 227.52945000002,
+        "p95": 316.5078150000681,
+        "max": 1073.2096000001548
+      },
+      "position_error_m": {
+        "count": 258,
+        "mean": 0.007071067811865325,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 258,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 258,
+          "mean": 1.0149468992128186,
+          "median": 0.9635000001253502,
+          "p95": 1.5756200001760563,
+          "max": 5.872400000043854
+        },
+        "preprocessing": {
+          "count": 258,
+          "mean": 0.6282573643257051,
+          "median": 0.5763999999999214,
+          "p95": 1.0223599998880673,
+          "max": 3.9904999998725543
+        },
+        "hsv": {
+          "count": 258,
+          "mean": 69.03159612404103,
+          "median": 69.13565000013477,
+          "p95": 103.09046999987004,
+          "max": 202.9888000001847
+        },
+        "lighting": {
+          "count": 258,
+          "mean": 23.61093992248095,
+          "median": 23.98025000002235,
+          "p95": 34.11338500002329,
+          "max": 58.414300000094954
+        },
+        "global_matching": {
+          "count": 1,
+          "mean": 1026.352300000326,
+          "median": 1026.352300000326,
+          "p95": 1026.352300000326,
+          "max": 1026.352300000326
+        },
+        "local_matching": {
+          "count": 257,
+          "mean": 107.76381556418772,
+          "median": 104.38350000003993,
+          "p95": 159.71249999984138,
+          "max": 281.76589999975477
+        },
+        "tracking": {
+          "count": 258,
+          "mean": 0.6200263566028326,
+          "median": 0.6159499998830142,
+          "p95": 0.9423199998309426,
+          "max": 1.5156999997998355
+        },
+        "localization": {
+          "count": 258,
+          "mean": 205.21917364340854,
+          "median": 201.86164999995526,
+          "p95": 292.9788449999932,
+          "max": 1072.4420999999893
+        },
+        "replay_delivery_lag": {
+          "count": 258,
+          "mean": 7.7411639535297185,
+          "median": 7.897449999973105,
+          "p95": 15.078390000235231,
+          "max": 25.44560000023921
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 317.5104804642626,
+      "error": null,
+      "stream_status": null,
+      "timestamps_preserved": true
+    }
+  ]
+}

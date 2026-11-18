@@ -1,0 +1,57 @@
+[
+  {
+    "file": "repeat-01.jpg",
+    "mode": "global",
+    "used": true,
+    "reason": "matched",
+    "ms": 1564.2320000006293,
+    "xy": [
+      1.0875,
+      1.1
+    ]
+  },
+  {
+    "file": "repeat-02.jpg",
+    "mode": "local",
+    "used": true,
+    "reason": "matched",
+    "ms": 92.38850000110688,
+    "xy": [
+      1.0875,
+      1.1
+    ]
+  },
+  {
+    "file": "repeat-03.jpg",
+    "mode": "local",
+    "used": true,
+    "reason": "matched",
+    "ms": 76.72350000029837,
+    "xy": [
+      1.0771245778313834,
+      1.1103754221686166
+    ]
+  },
+  {
+    "file": "repeat-04.jpg",
+    "mode": "local",
+    "used": true,
+    "reason": "matched",
+    "ms": 76.1345999999321,
+    "xy": [
+      1.0832251784484097,
+      1.1042748215515903
+    ]
+  },
+  {
+    "file": "repeat-05.jpg",
+    "mode": "local",
+    "used": true,
+    "reason": "matched",
+    "ms": 80.58919999893988,
+    "xy": [
+      1.086404747707285,
+      1.101095252292715
+    ]
+  }
+]

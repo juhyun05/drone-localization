@@ -1,0 +1,4 @@
+-r KAIST_Drone_Localization/requirements.txt
+-r KAIST_Map_Print/requirements.txt
+pyproj>=3.6,<4
+shapely>=2,<3

@@ -1,0 +1,23 @@
+{
+  "container_fps": 10,
+  "input_resolution": [
+    240,
+    180
+  ],
+  "settings": {
+    "input_kind": "synthetic",
+    "scenario": "stationary",
+    "frame_count": 1800,
+    "timeline_fps": 25,
+    "seed": 42,
+    "pose_xy_yaw": [
+      1.73,
+      2.02,
+      37
+    ],
+    "map_sha256": "39d757cabc5d04971af27d9fad5f6adf53e1818308dcf52efd1b9d4f973f3c6b",
+    "source_image_sha256": "d97149274cb7a7c041875835a8ff4ac432501707970fecc64b01019470328f46",
+    "opencv": "5.0.0",
+    "numpy": "2.4.6"
+  }
+}

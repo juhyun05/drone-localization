@@ -1,0 +1,955 @@
+{
+  "input_kind": "video_replay",
+  "input": "experiments\\performance_optimization\\input\\stationary.avi",
+  "scenario": "stationary",
+  "requested_seconds_per_mode": 8,
+  "max_frame_age_ms": 300,
+  "ground_truth_xy": [
+    1.73,
+    2.02
+  ],
+  "truth_yaw_deg": 37,
+  "settings": {
+    "diagnostic_only": true
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 8,
+    "opencv": "5.0.0",
+    "opencv_threads": 1,
+    "opencv_parallel_framework": "Concurrency",
+    "numpy": "2.4.6",
+    "blas": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.31.188.0",
+      "detection method": "pkgconfig",
+      "include directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-6ukx7exl/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include",
+      "lib directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-6ukx7exl/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+      "pc file directory": "D:/a/numpy-release/numpy-release/.openblas"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "OPENCV_FOR_THREADS_NUM": null
+    },
+    "input_files": {
+      "stationary.avi": {
+        "sha256": "8fb62b382c18b06669b6d1a10b29ae10f6a9d31597c2dfc5295a263fb6171e8a",
+        "bytes": 14562690
+      },
+      "stationary.csv": {
+        "sha256": "a2741840b1264d9c1ac08b76a568299e7a2026cf0f7824a5dec15638aaeca847",
+        "bytes": 66139
+      },
+      "stationary.json": {
+        "sha256": "b1fe9114bf65a4b8e224cb30cf581379206c139b3c4c3a5399b1ec0dd4e8a681",
+        "bytes": 526
+      }
+    },
+    "code_sha256": {
+      "localization/camera_interface.py": "4c1731556636d587d2eb1e3eea5ba36cd267cf5c7d6332d2cc771f72ed82b75f",
+      "localization/camera_preprocessing.py": "67933701512c14ac83c9e8c4041abbd245a2b4beca34c676d2207965e655c33c",
+      "localization/camera_recording.py": "9baffe428816ca7e73b26160fdf904eb117957dd1773214ba0cdc5f45adea097",
+      "localization/camera_simulator.py": "2f85dbae0f5ebef3079813096948ec61c80a3dc6d7d04c8946446f50ba5439ed",
+      "localization/camera_stream.py": "ac20c884846e80dce09b4858e32125566868a5a16378cddf8ea52463171ce9cc",
+      "localization/frame_scheduler.py": "70df79befd67bbcf3efb9a0d80330f098897058a709cb52dd58a730d4f4f31bb",
+      "localization/illumination_correction.py": "00da91c9fea2df5ecc930b517fe862e5c19299693c94b9c6bc089f7761718306",
+      "localization/image_processing.py": "96c0ed8f50cfb236a960241b4688a4e6123b5206740e262467422573b45a9764",
+      "localization/kalman_filter.py": "1d620b0dfcec3b14836c7227e68e93cdf3d6b7679530e8a07986d05a02858a49",
+      "localization/lighting_pipeline.py": "27ce27b4d4a5f0aab6ef03a35bd646fe890bf1446f8944d1143261655282c502",
+      "localization/live_localization.py": "6af99e211d3419169a85224c65ff9f45cb6a8084c6848a0f39b7c9c99dcf0688",
+      "localization/map_loader.py": "a52a91d70b926b678b787dcbc44f6dbcbc774474e875ff622c132bc6d2ca4e03",
+      "localization/map_matching.py": "22fd09548b685031f7900a179a161f81c66511fe8509470cab90af0d148c4439",
+      "localization/random_view.py": "0f343d57a5be17248482afe8f2839c60dca1a4d7c624ba39e3b30329904b71d5",
+      "localization/scale_cli.py": "5b36ed3522db37d88f37b5a8d3d8cd2242ba90f6787ab681feda3a92093c1697",
+      "localization/shadow_detection.py": "e02f9952296dfc84f79a47696370a32c3ed3f6f71896a4a9436b80700de77042",
+      "localization/tracking_manager.py": "98140ef541b8256aff0358aefd69ab09e98f96516e96b83e5e778088ab281793",
+      "main.py": "97b6d3f0c471995ae709bd119c1e5b11e69abc6ee41ee1e3fa88439592e094d1",
+      "simulation/drone_trajectory.py": "cc18fcaa30b13a998cb6c00424c339cab1d42f80c68763e8f2f69cf27e3d1718",
+      "simulation/lighting.py": "5c42b8351559eb38b9a02a62e057aea0d8d7bd77bd4dd504cb66b2174e05ad40",
+      "simulation/playback.py": "21a92b52b463ca91ed1230250df032c4a73b27154532292531c3d67999cfc02b",
+      "tools/benchmark_environment.py": "559580db4c3419fda7f20d120d59636afa1913a15dea29cbd22361af48241e40",
+      "tools/benchmark_live_pipeline.py": "624494c1c7eb90ad89b9444b90fc71a2078c84bb852f9756a9872fbe34309bf6",
+      "tools/calibrate_camera.py": "9298dbaa369d86492d495b689b9b0d7980096d1719ea8b9f077a42d324ca3589",
+      "tools/generate_performance_fixture.py": "b6e84864209497273b4372e2345ea2255f2017db9e32e3eabd322d5747272080",
+      "tools/inspect_camera_frame.py": "aa74e6d26a16c58232eb0180ca6fba96b914d3fc71a8aad5e4054ed9ae349e24",
+      "tools/test_camera_stream.py": "679bdc09924f0d36776cb8ce819f213eab26dbcdd28f23d47173c956498bc3dc"
+    }
+  },
+  "warmup_s": 4,
+  "repeat_count": 3,
+  "order_seed": 42,
+  "orders": [
+    [
+      200,
+      0
+    ],
+    [
+      0,
+      200
+    ],
+    [
+      200,
+      0
+    ]
+  ],
+  "modes": [
+    {
+      "elapsed_s": 8.005919400000039,
+      "camera_receive_fps": 25.10642312986551,
+      "localization_fps": 4.246857643857848,
+      "received_frame_count": 201,
+      "processed_frame_count": 34,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 166,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.8258706467661692,
+      "matching_attempt_count": 34,
+      "matching_success_count": 34,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 34,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 34,
+        "mean": 225.84937647053158,
+        "median": 224.94555000002947,
+        "p95": 272.16730999991796,
+        "max": 304.1474999999991
+      },
+      "frame_age_ms": {
+        "count": 34,
+        "mean": 23.473200000005498,
+        "median": 24.850599999808765,
+        "p95": 44.32838499994886,
+        "max": 47.975400000268564
+      },
+      "receive_to_result_ms": {
+        "count": 34,
+        "mean": 249.3225764705371,
+        "median": 246.03949999982433,
+        "p95": 287.59090000000924,
+        "max": 343.37730000015654
+      },
+      "position_error_m": {
+        "count": 34,
+        "mean": 0.0070710678118653236,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865325,
+      "yaw_error_deg": {
+        "count": 34,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 34,
+          "mean": 0.8009205882632052,
+          "median": 0.7522000000790285,
+          "p95": 1.2209450000227657,
+          "max": 1.420099999904778
+        },
+        "preprocessing": {
+          "count": 34,
+          "mean": 0.586423529405104,
+          "median": 0.5559500000344997,
+          "p95": 0.8490950000123116,
+          "max": 1.4550999999300984
+        },
+        "hsv": {
+          "count": 34,
+          "mean": 108.15131764703062,
+          "median": 108.75440000017988,
+          "p95": 133.4052399999564,
+          "max": 144.73309999993944
+        },
+        "lighting": {
+          "count": 34,
+          "mean": 26.26605882356029,
+          "median": 25.738649999993868,
+          "p95": 33.545220000246445,
+          "max": 36.22140000015861
+        },
+        "local_matching": {
+          "count": 34,
+          "mean": 89.25285588235751,
+          "median": 89.26434999989397,
+          "p95": 118.51251500002034,
+          "max": 124.23850000050152
+        },
+        "tracking": {
+          "count": 34,
+          "mean": 0.6403000000131321,
+          "median": 0.6341499997688516,
+          "p95": 0.9148449999884177,
+          "max": 0.9817999998631421
+        },
+        "localization": {
+          "count": 34,
+          "mean": 224.9013794117432,
+          "median": 224.45834999984982,
+          "p95": 270.7567250001148,
+          "max": 303.4502999998949
+        },
+        "replay_delivery_lag": {
+          "count": 34,
+          "mean": 7.595382353054661,
+          "median": 7.301849999976184,
+          "p95": 14.207785000257896,
+          "max": 24.372000000312255
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 8,
+      "complete": true,
+      "process_cpu_percent": 97.5840451254101,
+      "error": null,
+      "started_utc": "2026-11-17T12:18:27+00:00",
+      "warmup_s": 4,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 69906432,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          173173750000,
+          238844843750,
+          87002031250
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 75579392,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          173453125000,
+          239234375000,
+          87252500000
+        ]
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 1,
+      "execution_order": 1,
+      "csv": "repeat_01/performance_200ms.csv"
+    },
+    {
+      "elapsed_s": 8.009499200000391,
+      "camera_receive_fps": 25.0952019571948,
+      "localization_fps": 5.868032298448536,
+      "received_frame_count": 201,
+      "processed_frame_count": 47,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 153,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.7611940298507462,
+      "matching_attempt_count": 47,
+      "matching_success_count": 47,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 47,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 47,
+        "mean": 166.55725957450178,
+        "median": 160.6845000001158,
+        "p95": 203.8234799998463,
+        "max": 261.1608000001979
+      },
+      "frame_age_ms": {
+        "count": 47,
+        "mean": 18.928402127672367,
+        "median": 16.81830000006812,
+        "p95": 41.36271000015767,
+        "max": 45.91040000013891
+      },
+      "receive_to_result_ms": {
+        "count": 47,
+        "mean": 185.48566170217416,
+        "median": 180.5451999998695,
+        "p95": 227.56802999988392,
+        "max": 291.61740000017744
+      },
+      "position_error_m": {
+        "count": 47,
+        "mean": 0.007071067811865326,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865325,
+      "yaw_error_deg": {
+        "count": 47,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 47,
+          "mean": 0.6145595744647893,
+          "median": 0.6213999999999942,
+          "p95": 0.8354100000360629,
+          "max": 0.9124000002884713
+        },
+        "preprocessing": {
+          "count": 47,
+          "mean": 0.42375744679373656,
+          "median": 0.4266999999344989,
+          "p95": 0.6554300000971125,
+          "max": 0.7177999996201834
+        },
+        "hsv": {
+          "count": 47,
+          "mean": 81.83682553194461,
+          "median": 80.46479999984513,
+          "p95": 104.14415000004736,
+          "max": 109.52770000039891
+        },
+        "lighting": {
+          "count": 47,
+          "mean": 19.613944680839538,
+          "median": 19.285200000012992,
+          "p95": 25.28359000002637,
+          "max": 30.455800000254385
+        },
+        "local_matching": {
+          "count": 47,
+          "mean": 63.301551063780586,
+          "median": 62.67020000041157,
+          "p95": 77.35115999944355,
+          "max": 127.36489999952028
+        },
+        "tracking": {
+          "count": 47,
+          "mean": 0.48242978726270946,
+          "median": 0.4946999997628154,
+          "p95": 0.6182900000112567,
+          "max": 0.6321000005300448
+        },
+        "localization": {
+          "count": 47,
+          "mean": 165.66181489360076,
+          "median": 159.15110000014465,
+          "p95": 203.02050000004783,
+          "max": 260.7249000002412
+        },
+        "replay_delivery_lag": {
+          "count": 47,
+          "mean": 7.540263829981841,
+          "median": 8.0683000001045,
+          "p95": 14.332119999926363,
+          "max": 15.115800000330637
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 8,
+      "complete": true,
+      "process_cpu_percent": 97.73551135381369,
+      "error": null,
+      "started_utc": "2026-11-17T12:18:39+00:00",
+      "warmup_s": 4,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 70516736,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          173660156250,
+          239487812500,
+          87350312500
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 70508544,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          174062343750,
+          239984843750,
+          87494531250
+        ]
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 1,
+      "execution_order": 2,
+      "csv": "repeat_01/performance_unlimited.csv"
+    },
+    {
+      "elapsed_s": 8.006924799999979,
+      "camera_receive_fps": 24.97837871538403,
+      "localization_fps": 6.119702785269087,
+      "received_frame_count": 200,
+      "processed_frame_count": 49,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 150,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.75,
+      "matching_attempt_count": 49,
+      "matching_success_count": 49,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 49,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 49,
+        "mean": 158.761636734662,
+        "median": 160.7930000000124,
+        "p95": 181.70183999991417,
+        "max": 190.7072000003609
+      },
+      "frame_age_ms": {
+        "count": 49,
+        "mean": 22.160093877610795,
+        "median": 23.741700000755372,
+        "p95": 39.409880000312114,
+        "max": 44.66410000077303
+      },
+      "receive_to_result_ms": {
+        "count": 49,
+        "mean": 180.9217306122728,
+        "median": 183.86699999973644,
+        "p95": 207.2466199999326,
+        "max": 223.24099999968894
+      },
+      "position_error_m": {
+        "count": 49,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 49,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 49,
+          "mean": 0.5777857143454769,
+          "median": 0.5965999998807092,
+          "p95": 0.7579000004625412,
+          "max": 0.787799999670824
+        },
+        "preprocessing": {
+          "count": 49,
+          "mean": 0.44553877562845756,
+          "median": 0.45589999990625074,
+          "p95": 0.6485200005045043,
+          "max": 0.7411999995383667
+        },
+        "hsv": {
+          "count": 49,
+          "mean": 79.59308367350916,
+          "median": 81.88700000027893,
+          "p95": 94.24040000012607,
+          "max": 101.50979999980336
+        },
+        "lighting": {
+          "count": 49,
+          "mean": 18.730089795878616,
+          "median": 19.237800000155403,
+          "p95": 22.422059999735207,
+          "max": 23.978799999895273
+        },
+        "local_matching": {
+          "count": 49,
+          "mean": 58.56669387750507,
+          "median": 57.365600000593986,
+          "p95": 70.94595999969897,
+          "max": 74.93800000065676
+        },
+        "tracking": {
+          "count": 49,
+          "mean": 0.4819551020550627,
+          "median": 0.4870000002483721,
+          "p95": 0.6069199998819385,
+          "max": 0.6524000009449082
+        },
+        "localization": {
+          "count": 49,
+          "mean": 157.8208081632789,
+          "median": 159.78639999957522,
+          "p95": 180.38670000005362,
+          "max": 190.15500000023167
+        },
+        "replay_delivery_lag": {
+          "count": 49,
+          "mean": 6.530357142987576,
+          "median": 5.938199999945937,
+          "p95": 13.806879999901856,
+          "max": 14.644199999565899
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 8,
+      "complete": true,
+      "process_cpu_percent": 99.13294052668037,
+      "error": null,
+      "started_utc": "2026-11-17T12:18:52+00:00",
+      "warmup_s": 4,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 70025216,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          174284843750,
+          240237968750,
+          87573906250
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 74969088,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          174711093750,
+          240760781250,
+          87692343750
+        ]
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 2,
+      "execution_order": 1,
+      "csv": "repeat_02/performance_unlimited.csv"
+    },
+    {
+      "elapsed_s": 8.014776399999391,
+      "camera_receive_fps": 25.078678427013294,
+      "localization_fps": 4.741242687694055,
+      "received_frame_count": 201,
+      "processed_frame_count": 38,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 162,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.8059701492537313,
+      "matching_attempt_count": 38,
+      "matching_success_count": 38,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 38,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 38,
+        "mean": 176.2900368419794,
+        "median": 174.37500000005457,
+        "p95": 213.6083149999194,
+        "max": 256.0161999999764
+      },
+      "frame_age_ms": {
+        "count": 38,
+        "mean": 21.986863157962944,
+        "median": 19.674099999974715,
+        "p95": 45.55449999988923,
+        "max": 47.34619999999268
+      },
+      "receive_to_result_ms": {
+        "count": 38,
+        "mean": 198.27689999994234,
+        "median": 198.80774999955975,
+        "p95": 231.08029000009074,
+        "max": 281.6413000000466
+      },
+      "position_error_m": {
+        "count": 38,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865325,
+      "yaw_error_deg": {
+        "count": 38,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 38,
+          "mean": 0.7683578948767957,
+          "median": 0.6570500004272617,
+          "p95": 1.0269050002989382,
+          "max": 3.7639000001945533
+        },
+        "preprocessing": {
+          "count": 38,
+          "mean": 0.48761578964810104,
+          "median": 0.4558500004350208,
+          "p95": 0.8091000001968496,
+          "max": 1.0075999998662155
+        },
+        "hsv": {
+          "count": 38,
+          "mean": 84.40277368428819,
+          "median": 82.66249999996944,
+          "p95": 104.19284500035243,
+          "max": 121.03010000009817
+        },
+        "lighting": {
+          "count": 38,
+          "mean": 21.460189473504887,
+          "median": 21.087299999635434,
+          "p95": 26.2557900000047,
+          "max": 35.239499999988766
+        },
+        "local_matching": {
+          "count": 38,
+          "mean": 68.42940789470288,
+          "median": 67.50170000032085,
+          "p95": 88.30036500039569,
+          "max": 111.36319999968691
+        },
+        "tracking": {
+          "count": 38,
+          "mean": 0.5281973683993687,
+          "median": 0.5227000006016169,
+          "p95": 0.6935849994079035,
+          "max": 0.6992999997237348
+        },
+        "localization": {
+          "count": 38,
+          "mean": 175.31198684218907,
+          "median": 173.1048000001465,
+          "p95": 212.36898000001923,
+          "max": 253.94460000006802
+        },
+        "replay_delivery_lag": {
+          "count": 38,
+          "mean": 7.339649999625851,
+          "median": 6.822049999300361,
+          "p95": 14.459574999818868,
+          "max": 15.720199999122997
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 8,
+      "complete": true,
+      "process_cpu_percent": 86.16896661022913,
+      "error": null,
+      "started_utc": "2026-11-17T12:19:04+00:00",
+      "warmup_s": 4,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 71192576,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          174917968750,
+          241011875000,
+          87776250000
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 71569408,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          175326250000,
+          241532031250,
+          87897343750
+        ]
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 2,
+      "execution_order": 2,
+      "csv": "repeat_02/performance_200ms.csv"
+    },
+    {
+      "elapsed_s": 8.005911799999922,
+      "camera_receive_fps": 25.1064469633555,
+      "localization_fps": 4.496677068063672,
+      "received_frame_count": 201,
+      "processed_frame_count": 36,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 164,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.8159203980099502,
+      "matching_attempt_count": 36,
+      "matching_success_count": 36,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 36,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 36,
+        "mean": 196.1911583333252,
+        "median": 197.3294999997961,
+        "p95": 266.74274999982117,
+        "max": 278.8094999996247
+      },
+      "frame_age_ms": {
+        "count": 36,
+        "mean": 22.76249166672844,
+        "median": 22.920200000044133,
+        "p95": 45.88692499964964,
+        "max": 57.99219999971683
+      },
+      "receive_to_result_ms": {
+        "count": 36,
+        "mean": 218.95365000005364,
+        "median": 222.92365000021164,
+        "p95": 296.18147500013947,
+        "max": 306.7528999999922
+      },
+      "position_error_m": {
+        "count": 36,
+        "mean": 0.0070710678118653236,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865325,
+      "yaw_error_deg": {
+        "count": 36,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 36,
+          "mean": 0.7421638889203072,
+          "median": 0.7334500005526934,
+          "p95": 1.0683999996672355,
+          "max": 1.5819000000192318
+        },
+        "preprocessing": {
+          "count": 36,
+          "mean": 0.5673527778324368,
+          "median": 0.5425999997896724,
+          "p95": 0.9078750006210612,
+          "max": 0.974599999608472
+        },
+        "hsv": {
+          "count": 36,
+          "mean": 95.17236111118008,
+          "median": 92.81220000002577,
+          "p95": 128.19570000010572,
+          "max": 136.65579999997135
+        },
+        "lighting": {
+          "count": 36,
+          "mean": 23.044116666748476,
+          "median": 22.3163000000568,
+          "p95": 31.851150000420603,
+          "max": 31.990200000109326
+        },
+        "local_matching": {
+          "count": 36,
+          "mean": 75.69051388883155,
+          "median": 75.70180000038818,
+          "p95": 102.3464499999136,
+          "max": 111.99059999944438
+        },
+        "tracking": {
+          "count": 36,
+          "mean": 0.5657083333971968,
+          "median": 0.5615500008389063,
+          "p95": 0.7303000002139015,
+          "max": 0.7630999998582411
+        },
+        "localization": {
+          "count": 36,
+          "mean": 195.0449083333802,
+          "median": 195.9049000001869,
+          "p95": 265.2106250002362,
+          "max": 278.1119999999646
+        },
+        "replay_delivery_lag": {
+          "count": 36,
+          "mean": 7.369458333363986,
+          "median": 7.3569000001043605,
+          "p95": 14.603624999836029,
+          "max": 15.337499999986903
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 8,
+      "complete": true,
+      "process_cpu_percent": 89.58223846533096,
+      "error": null,
+      "started_utc": "2026-11-17T12:19:16+00:00",
+      "warmup_s": 4,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 70172672,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          175557187500,
+          241791406250,
+          87966718750
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 74231808,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          175899375000,
+          242241875000,
+          88157500000
+        ]
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 3,
+      "execution_order": 1,
+      "csv": "repeat_03/performance_200ms.csv"
+    },
+    {
+      "elapsed_s": 8.0054726999997,
+      "camera_receive_fps": 24.98290950389569,
+      "localization_fps": 3.4976073305453967,
+      "received_frame_count": 200,
+      "processed_frame_count": 28,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 171,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.855,
+      "matching_attempt_count": 28,
+      "matching_success_count": 28,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 28,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "processing_ms": {
+        "count": 28,
+        "mean": 275.3343928571082,
+        "median": 250.87494999979754,
+        "p95": 399.1284950001045,
+        "max": 485.78100000031554
+      },
+      "frame_age_ms": {
+        "count": 28,
+        "mean": 21.088489285765327,
+        "median": 19.634799999494135,
+        "p95": 44.50249999990774,
+        "max": 47.30219999964902
+      },
+      "receive_to_result_ms": {
+        "count": 28,
+        "mean": 296.42288214287356,
+        "median": 273.552749999908,
+        "p95": 420.6489350000993,
+        "max": 492.1470999997837
+      },
+      "position_error_m": {
+        "count": 28,
+        "mean": 0.007071067811865323,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865326,
+      "yaw_error_deg": {
+        "count": 28,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 28,
+          "mean": 0.9095071429133635,
+          "median": 0.9067499995580874,
+          "p95": 1.2831200002892726,
+          "max": 1.3768999997409992
+        },
+        "preprocessing": {
+          "count": 28,
+          "mean": 0.7201071427971328,
+          "median": 0.760949999857985,
+          "p95": 1.0421849999602273,
+          "max": 1.612099999874772
+        },
+        "hsv": {
+          "count": 28,
+          "mean": 127.7711428571625,
+          "median": 116.29799999991519,
+          "p95": 177.49240000021018,
+          "max": 218.04250000059255
+        },
+        "lighting": {
+          "count": 28,
+          "mean": 29.662117857079856,
+          "median": 27.49329999960537,
+          "p95": 42.65685999962443,
+          "max": 51.910899999711546
+        },
+        "local_matching": {
+          "count": 28,
+          "mean": 114.89095000004974,
+          "median": 101.9367499998225,
+          "p95": 179.26752000053057,
+          "max": 235.81229999945208
+        },
+        "tracking": {
+          "count": 28,
+          "mean": 0.7659071428796389,
+          "median": 0.6886999999551335,
+          "p95": 1.2261450001460612,
+          "max": 2.230500000223401
+        },
+        "localization": {
+          "count": 28,
+          "mean": 273.81573928573744,
+          "median": 249.9398499999188,
+          "p95": 397.2289600000295,
+          "max": 482.7347999998892
+        },
+        "replay_delivery_lag": {
+          "count": 28,
+          "mean": 6.117871428679272,
+          "median": 4.896450000160257,
+          "p95": 13.309519999893379,
+          "max": 15.34780000019964
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 8,
+      "complete": true,
+      "process_cpu_percent": 94.46662656160558,
+      "error": null,
+      "started_utc": "2026-11-17T12:19:28+00:00",
+      "warmup_s": 4,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 71135232,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          176000468750,
+          242389062500,
+          88341562500
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 74391552,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          176215468750,
+          242721562500,
+          88650312500
+        ]
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 3,
+      "execution_order": 2,
+      "csv": "repeat_03/performance_unlimited.csv"
+    }
+  ]
+}

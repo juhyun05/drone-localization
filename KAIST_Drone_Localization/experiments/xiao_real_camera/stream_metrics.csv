@@ -1,0 +1,2 @@
+measured_at,requested_s,elapsed_s,received,receive_fps,consumed,state,error,buffer_overwrites,sender_gaps,decode_errors,disconnects,reconnections,latest_receive_age_s,cpu_percent,width,height,localization_fps,receive_interval_mean_ms,receive_interval_p95_ms,decode_mean_ms,decode_p95_ms,match_mean_ms,match_p95_ms
+2026-11-16T05:42:54+09:00,120.0,20.657000000000153,0,0.0,0,failed,timed out,0,,0,0,0,,0.15128043762404883,,,,,,,,,

@@ -1,0 +1,58 @@
+{
+  "building": {
+    "frames": 48,
+    "accepted": 48,
+    "median_ms": 49.272700000983605,
+    "local_median_ms": 49.249400000917376,
+    "global_median_ms": 603.377500001443,
+    "processing_fps": 15.151669155179405,
+    "tracking_losses": 0,
+    "sources": {
+      "BUILDING": 48,
+      "HYBRID": 0,
+      "ROAD_ONLY": 0
+    }
+  },
+  "road": {
+    "frames": 48,
+    "accepted": 0,
+    "median_ms": 27.760399999351648,
+    "local_median_ms": null,
+    "global_median_ms": 1870.1868500002092,
+    "processing_fps": 2.0020605707915538,
+    "tracking_losses": 0,
+    "sources": {
+      "BUILDING": 0,
+      "HYBRID": 0,
+      "ROAD_ONLY": 0
+    }
+  },
+  "fixed": {
+    "frames": 48,
+    "accepted": 48,
+    "median_ms": 226.51704999952926,
+    "local_median_ms": 225.14019999835,
+    "global_median_ms": 2428.1378999985463,
+    "processing_fps": 3.5366498306436984,
+    "tracking_losses": 0,
+    "sources": {
+      "BUILDING": 0,
+      "HYBRID": 48,
+      "ROAD_ONLY": 0
+    }
+  },
+  "adaptive": {
+    "frames": 48,
+    "accepted": 47,
+    "median_ms": 165.18494999945688,
+    "local_median_ms": 162.07959999883315,
+    "global_median_ms": 4687.641099999382,
+    "processing_fps": 3.588250498009031,
+    "tracking_losses": 0,
+    "sources": {
+      "BUILDING": 0,
+      "HYBRID": 47,
+      "ROAD_ONLY": 0
+    }
+  }
+}

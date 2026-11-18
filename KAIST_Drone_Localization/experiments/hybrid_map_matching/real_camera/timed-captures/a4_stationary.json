@@ -1,0 +1,10 @@
+{
+  "container_fps": 10,
+  "input_resolution": [
+    320,
+    240
+  ],
+  "settings": {
+    "capture": "XIAO HTTP stills with original receive timestamps"
+  }
+}

@@ -1,0 +1,12 @@
+/.localization-venv/
+/.xiao-build/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+wifi_secrets.h
+*.qgz~
+*.qgs~
+*.qgd-journal
