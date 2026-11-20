@@ -1,0 +1,7 @@
+{
+  "period_ms": 0,
+  "requested_s": 12,
+  "complete": false,
+  "received_frame_count": 0,
+  "error": "timed out"
+}

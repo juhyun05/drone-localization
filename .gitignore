@@ -10,3 +10,8 @@ wifi_secrets.h
 *.qgz~
 *.qgs~
 *.qgd-journal
+.env
+/data/recordings/
+/data/experiments/localization/xiao_real_camera/sample_frames/
+/data/experiments/localization/xiao_real_camera/calibration/
+/data/experiments/localization/xiao_real_camera/*.avi

@@ -1,0 +1,1959 @@
+{
+  "input_kind": "video_replay",
+  "input": "experiments\\performance_optimization\\input\\stationary.avi",
+  "scenario": "stationary",
+  "requested_seconds_per_mode": 60,
+  "max_frame_age_ms": 300,
+  "ground_truth_xy": [
+    1.73,
+    2.02
+  ],
+  "truth_yaw_deg": 37.0,
+  "settings": {
+    "camera_config": "C:\\Users\\82109\\Desktop\\kaist\\3-1\\공설\\구현\\KAIST_Drone_Localization\\config\\camera_config.yaml",
+    "map": "C:\\Users\\82109\\Desktop\\kaist\\3-1\\공설\\구현\\KAIST_map_roads_gate_2p5m\\KAIST_model_features_2p5m.json",
+    "settings_sha256": {
+      "camera_config": "ee6ce5fd9a9d21cfc73fd425623b8feed533c2483fc87ad3af3fd1d0d6ad6256",
+      "map": "39d757cabc5d04971af27d9fad5f6adf53e1818308dcf52efd1b9d4f973f3c6b"
+    },
+    "search": {
+      "pixels_per_m": 80.0,
+      "nominal_span_m": 0.6745085168424266,
+      "scale_factors": [
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2
+      ],
+      "yaw_step_deg": 5.0,
+      "local_radius_m": 0.25,
+      "min_frame_fraction": 0.0125,
+      "min_foreground": 35,
+      "min_score": 0.36,
+      "min_margin": 0.07,
+      "separation_m": 0.08,
+      "separation_deg": 20.0,
+      "auto_scale": true,
+      "scale_min": 0.5,
+      "scale_max": 2.0,
+      "scale_steps": 15,
+      "scale_refine_steps": 5,
+      "min_effective_fraction": 0.35
+    },
+    "colors": {
+      "hue_tolerance": 7,
+      "saturation_tolerance": 55,
+      "value_tolerance": 95,
+      "morph_size": 3,
+      "min_area_px": 12
+    },
+    "global_only": false,
+    "lighting": {
+      "method": "combined",
+      "clip_limit": 2,
+      "tile_grid_size": [
+        8,
+        8
+      ]
+    },
+    "shadow_aware": true,
+    "shadow_debug": false
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 8,
+    "opencv": "5.0.0",
+    "opencv_threads": 1,
+    "opencv_parallel_framework": "Concurrency",
+    "numpy": "2.4.6",
+    "blas": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.31.188.0",
+      "detection method": "pkgconfig",
+      "include directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-6ukx7exl/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include",
+      "lib directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-6ukx7exl/cp311-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+      "pc file directory": "D:/a/numpy-release/numpy-release/.openblas"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "OPENCV_FOR_THREADS_NUM": null
+    },
+    "input_files": {
+      "stationary.avi": {
+        "sha256": "8fb62b382c18b06669b6d1a10b29ae10f6a9d31597c2dfc5295a263fb6171e8a",
+        "bytes": 14562690
+      },
+      "stationary.csv": {
+        "sha256": "a2741840b1264d9c1ac08b76a568299e7a2026cf0f7824a5dec15638aaeca847",
+        "bytes": 66139
+      },
+      "stationary.json": {
+        "sha256": "b1fe9114bf65a4b8e224cb30cf581379206c139b3c4c3a5399b1ec0dd4e8a681",
+        "bytes": 526
+      }
+    },
+    "code_sha256": {
+      "localization/camera_interface.py": "ae5d2314b4e05d38c7e5fc15957b9bb439bf87948e792edb89e9154fd30f4b0a",
+      "localization/camera_preprocessing.py": "67933701512c14ac83c9e8c4041abbd245a2b4beca34c676d2207965e655c33c",
+      "localization/camera_recording.py": "9baffe428816ca7e73b26160fdf904eb117957dd1773214ba0cdc5f45adea097",
+      "localization/camera_simulator.py": "2f85dbae0f5ebef3079813096948ec61c80a3dc6d7d04c8946446f50ba5439ed",
+      "localization/camera_stream.py": "43e00655aca5b6b5b2fe9c4c920ddc6523a0a5ef6fe572fa009aec168d722fbe",
+      "localization/frame_scheduler.py": "73cab73ead5d14f4a8ce305ea1f5d4b6136a907d03740e988c283c48cfa3b7e7",
+      "localization/illumination_correction.py": "0edf67d092a0b2300de92c27562be88de933f2eeee7ed7586a5e57cbf7a603f8",
+      "localization/image_processing.py": "89eaae8ae502f317f0ee7f8ca16bcb2c62618774b1bb2ae5c838e5d228abde3f",
+      "localization/kalman_filter.py": "1d620b0dfcec3b14836c7227e68e93cdf3d6b7679530e8a07986d05a02858a49",
+      "localization/lighting_pipeline.py": "6dfb6454bad2264d7c88d343d92f191d4b0b61bdbb08f935de7a7227b2dcb6e3",
+      "localization/live_localization.py": "2e479936299ee321ac4a093ad5a786f37575eda3180ca8b6b4eb88083af2ae66",
+      "localization/map_loader.py": "a52a91d70b926b678b787dcbc44f6dbcbc774474e875ff622c132bc6d2ca4e03",
+      "localization/map_matching.py": "abb6af5b7d27ad33d804c3b2e5fe63f9e797c7bc3a7e3b0437a000bc000f3785",
+      "localization/random_view.py": "0f343d57a5be17248482afe8f2839c60dca1a4d7c624ba39e3b30329904b71d5",
+      "localization/scale_cli.py": "5b36ed3522db37d88f37b5a8d3d8cd2242ba90f6787ab681feda3a92093c1697",
+      "localization/shadow_detection.py": "85d9704936826235ec3bb943c7a4a4ac45e0665072a052a67f3dc3b3380ba442",
+      "localization/tracking_manager.py": "b7f619ae0585c90a9e9475cdbb3fdbfc7698b956491c39178e6b955a5f93401a",
+      "main.py": "fb7ec15bbc19ce77e6a10594971f7c4b136c5e3fc6fb83693044deabcd2d0b82",
+      "simulation/drone_trajectory.py": "cc18fcaa30b13a998cb6c00424c339cab1d42f80c68763e8f2f69cf27e3d1718",
+      "simulation/lighting.py": "5c42b8351559eb38b9a02a62e057aea0d8d7bd77bd4dd504cb66b2174e05ad40",
+      "simulation/playback.py": "21a92b52b463ca91ed1230250df032c4a73b27154532292531c3d67999cfc02b",
+      "tools/benchmark_environment.py": "559580db4c3419fda7f20d120d59636afa1913a15dea29cbd22361af48241e40",
+      "tools/benchmark_live_pipeline.py": "5cc749dc5ef2931d3200a6fbae4e0e6ddf365cd3d296399cffe7d145146d75a3",
+      "tools/calibrate_camera.py": "9298dbaa369d86492d495b689b9b0d7980096d1719ea8b9f077a42d324ca3589",
+      "tools/generate_performance_fixture.py": "b6e84864209497273b4372e2345ea2255f2017db9e32e3eabd322d5747272080",
+      "tools/inspect_camera_frame.py": "aa74e6d26a16c58232eb0180ca6fba96b914d3fc71a8aad5e4054ed9ae349e24",
+      "tools/profile_localization.py": "fd867d2a531ce64c1bdf4a80ac1984e27a9ff93e9393e354ed867765eb20464e",
+      "tools/test_camera_stream.py": "679bdc09924f0d36776cb8ce819f213eab26dbcdd28f23d47173c956498bc3dc"
+    }
+  },
+  "warmup_s": 4.0,
+  "repeat_count": 3,
+  "order_seed": 42,
+  "orders": [
+    [
+      150,
+      100,
+      200,
+      0
+    ],
+    [
+      100,
+      200,
+      0,
+      150
+    ],
+    [
+      200,
+      0,
+      150,
+      100
+    ]
+  ],
+  "modes": [
+    {
+      "elapsed_s": 60.004022400000395,
+      "camera_receive_fps": 24.998324112351344,
+      "localization_fps": 6.416236522170178,
+      "received_frame_count": 1500,
+      "processed_frame_count": 385,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1115,
+      "drained_frame_count": 0,
+      "skipped_frame_ratio": 0.7433333333333333,
+      "matching_attempt_count": 385,
+      "matching_success_count": 385,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 385,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 385,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 385,
+        "mean": 71.23875350649517,
+        "median": 73.23429999996733,
+        "p95": 84.62954000005993,
+        "max": 98.76979999989999
+      },
+      "frame_age_ms": {
+        "count": 385,
+        "mean": 19.038114545450796,
+        "median": 15.838900000744616,
+        "p95": 46.41055999964009,
+        "max": 47.58820000006381
+      },
+      "receive_to_result_ms": {
+        "count": 385,
+        "mean": 90.27686805194597,
+        "median": 91.09979999993811,
+        "p95": 115.2758599997469,
+        "max": 145.9500000000844
+      },
+      "position_error_m": {
+        "count": 385,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 385,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 385,
+          "mean": 0.5825379220687545,
+          "median": 0.562299999728566,
+          "p95": 0.8764400005020433,
+          "max": 1.5713000002506305
+        },
+        "preprocessing": {
+          "count": 385,
+          "mean": 0.48631818179557457,
+          "median": 0.4670999996960745,
+          "p95": 0.7892400002674548,
+          "max": 1.0879000001295935
+        },
+        "hsv": {
+          "count": 385,
+          "mean": 10.43774207790831,
+          "median": 10.504100000616745,
+          "p95": 13.665959999889306,
+          "max": 17.996800000219082
+        },
+        "lighting": {
+          "count": 385,
+          "mean": 15.504458181834258,
+          "median": 16.309200000250712,
+          "p95": 19.386919999487873,
+          "max": 24.217700000008335
+        },
+        "local_matching": {
+          "count": 385,
+          "mean": 43.70242519483551,
+          "median": 45.936199999232485,
+          "p95": 54.03410000017175,
+          "max": 68.65829999969719
+        },
+        "tracking": {
+          "count": 385,
+          "mean": 0.39848597399839775,
+          "median": 0.40210000042861793,
+          "p95": 0.5229399996096618,
+          "max": 0.6419000001187669
+        },
+        "localization": {
+          "count": 385,
+          "mean": 70.53216025973148,
+          "median": 72.306999999455,
+          "p95": 83.89675999951578,
+          "max": 97.561599999608
+        },
+        "replay_delivery_lag": {
+          "count": 385,
+          "mean": 7.479234805237842,
+          "median": 7.223800000247138,
+          "p95": 14.972339999985707,
+          "max": 15.771899999890593
+        }
+      },
+      "period_ms": 150,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 47.262456524914256,
+      "error": null,
+      "started_utc": "2026-11-17T12:32:54+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 5,
+      "resources_start": {
+        "rss_bytes": 67657728,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          221886718750,
+          296400937500,
+          98799687500
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 69881856,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          225859531250,
+          300694843750,
+          99307031250
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.36509766235555274,
+        "p95": 0.5619600000500213
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 1,
+      "execution_order": 1,
+      "csv": "repeat_01/performance_150ms.csv"
+    },
+    {
+      "elapsed_s": 60.0146423999995,
+      "camera_receive_fps": 25.01056308885067,
+      "localization_fps": 9.164430179125828,
+      "received_frame_count": 1501,
+      "processed_frame_count": 550,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 950,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.6329113924050633,
+      "matching_attempt_count": 550,
+      "matching_success_count": 550,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 550,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 550,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 550,
+        "mean": 68.90943254547396,
+        "median": 70.55730000001859,
+        "p95": 82.80312500010041,
+        "max": 102.04599999997299
+      },
+      "frame_age_ms": {
+        "count": 550,
+        "mean": 22.479389818194747,
+        "median": 16.101650000109657,
+        "p95": 46.83134999968388,
+        "max": 48.59200000009878
+      },
+      "receive_to_result_ms": {
+        "count": 550,
+        "mean": 91.38882236366871,
+        "median": 91.97349999976723,
+        "p95": 118.99477000015393,
+        "max": 148.07370000016817
+      },
+      "position_error_m": {
+        "count": 550,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 550,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 550,
+          "mean": 0.592787999997778,
+          "median": 0.570149999930436,
+          "p95": 0.9148999998615175,
+          "max": 1.6577999995206483
+        },
+        "preprocessing": {
+          "count": 550,
+          "mean": 0.4901974545332037,
+          "median": 0.4716499997812207,
+          "p95": 0.8221149998917098,
+          "max": 1.1966000001848442
+        },
+        "hsv": {
+          "count": 550,
+          "mean": 10.162752363617487,
+          "median": 10.153799999898183,
+          "p95": 13.991780000287683,
+          "max": 18.61579999967944
+        },
+        "lighting": {
+          "count": 550,
+          "mean": 14.15058745453445,
+          "median": 14.645599999767,
+          "p95": 17.594124999914126,
+          "max": 23.71969999967405
+        },
+        "local_matching": {
+          "count": 550,
+          "mean": 42.815801272761085,
+          "median": 44.315350000033504,
+          "p95": 53.428075000192614,
+          "max": 69.04190000022936
+        },
+        "tracking": {
+          "count": 550,
+          "mean": 0.38937309089305927,
+          "median": 0.3874499998346437,
+          "p95": 0.5141250001997831,
+          "max": 0.7233999995150953
+        },
+        "localization": {
+          "count": 550,
+          "mean": 68.01209163635411,
+          "median": 69.8399499997322,
+          "p95": 81.51547499992374,
+          "max": 101.66659999958938
+        },
+        "replay_delivery_lag": {
+          "count": 550,
+          "mean": 7.436069999689194,
+          "median": 7.125499999347085,
+          "p95": 14.674659999536741,
+          "max": 15.86929999939457
+        }
+      },
+      "period_ms": 100,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 64.3072231319341,
+      "error": null,
+      "started_utc": "2026-11-17T12:33:58+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 5,
+      "resources_start": {
+        "rss_bytes": 70598656,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          226095156250,
+          300962187500,
+          99363125000
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 77221888,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          230056406250,
+          305209531250,
+          99917343750
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.34956781819015637,
+        "p95": 0.5399850001140294
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 1,
+      "execution_order": 2,
+      "csv": "repeat_01/performance_100ms.csv"
+    },
+    {
+      "elapsed_s": 60.00313410000035,
+      "camera_receive_fps": 24.99869419320867,
+      "localization_fps": 4.833080877353677,
+      "received_frame_count": 1500,
+      "processed_frame_count": 290,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1209,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.806,
+      "matching_attempt_count": 290,
+      "matching_success_count": 290,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 290,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 290,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 290,
+        "mean": 109.2199020690024,
+        "median": 99.72874999994019,
+        "p95": 235.20772999986556,
+        "max": 345.2744000005623
+      },
+      "frame_age_ms": {
+        "count": 290,
+        "mean": 17.992826206861128,
+        "median": 15.726699999959237,
+        "p95": 38.35220499968275,
+        "max": 47.246399999494315
+      },
+      "receive_to_result_ms": {
+        "count": 290,
+        "mean": 127.21272827586353,
+        "median": 116.44445000001724,
+        "p95": 241.29484500003858,
+        "max": 376.356300000225
+      },
+      "position_error_m": {
+        "count": 290,
+        "mean": 0.0070710678118653236,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 290,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 290,
+          "mean": 0.6208586206506378,
+          "median": 0.5657500000779692,
+          "p95": 1.0634150000896627,
+          "max": 3.429399999731686
+        },
+        "preprocessing": {
+          "count": 290,
+          "mean": 0.5295472413904619,
+          "median": 0.4475500004446076,
+          "p95": 0.9995050000725317,
+          "max": 2.478599999449216
+        },
+        "hsv": {
+          "count": 290,
+          "mean": 15.129979999995879,
+          "median": 14.138449999791192,
+          "p95": 30.667779999839702,
+          "max": 48.135699999875214
+        },
+        "lighting": {
+          "count": 290,
+          "mean": 19.32891275864363,
+          "median": 17.322000000149274,
+          "p95": 36.33705999995983,
+          "max": 120.24599999949714
+        },
+        "local_matching": {
+          "count": 290,
+          "mean": 72.26323551724599,
+          "median": 65.5660499996884,
+          "p95": 145.86717500005767,
+          "max": 228.29470000033325
+        },
+        "tracking": {
+          "count": 290,
+          "mean": 0.577466551758648,
+          "median": 0.5215499991209072,
+          "p95": 1.0797350000757433,
+          "max": 1.9940000001952285
+        },
+        "localization": {
+          "count": 290,
+          "mean": 107.83290758622414,
+          "median": 98.37729999981093,
+          "p95": 233.3064050003942,
+          "max": 340.5000000002474
+        },
+        "replay_delivery_lag": {
+          "count": 290,
+          "mean": 8.044767241150613,
+          "median": 7.814849999704165,
+          "p95": 15.266944999984844,
+          "max": 31.496399999923597
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 53.85135374120368,
+      "error": null,
+      "started_utc": "2026-11-17T12:35:02+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 72183808,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          230275781250,
+          305464843750,
+          99988281250
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 78422016,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          233615625000,
+          309359687500,
+          100893437500
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.5549596551865197,
+        "p95": 1.1055849995955214
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 1,
+      "execution_order": 3,
+      "csv": "repeat_01/performance_200ms.csv"
+    },
+    {
+      "elapsed_s": 60.00613179999982,
+      "camera_receive_fps": 24.997445344410693,
+      "localization_fps": 16.331664291681655,
+      "received_frame_count": 1500,
+      "processed_frame_count": 980,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 519,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.346,
+      "matching_attempt_count": 980,
+      "matching_success_count": 980,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 980,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 980,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 980,
+        "mean": 60.4929242857127,
+        "median": 51.213449999977456,
+        "p95": 108.36305499956322,
+        "max": 312.8735999998753
+      },
+      "frame_age_ms": {
+        "count": 980,
+        "mean": 22.385404285728793,
+        "median": 22.542000000157714,
+        "p95": 43.59580499949516,
+        "max": 49.10510000081558
+      },
+      "receive_to_result_ms": {
+        "count": 980,
+        "mean": 82.87832857144147,
+        "median": 75.76285000004646,
+        "p95": 137.668754999413,
+        "max": 360.2099999998245
+      },
+      "position_error_m": {
+        "count": 980,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 980,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 980,
+          "mean": 0.6637829591927955,
+          "median": 0.5727000002480054,
+          "p95": 1.022390000071027,
+          "max": 23.081700000147976
+        },
+        "preprocessing": {
+          "count": 980,
+          "mean": 0.3487242856946829,
+          "median": 0.30399999968722113,
+          "p95": 0.6160700002510565,
+          "max": 1.337799999419076
+        },
+        "hsv": {
+          "count": 980,
+          "mean": 8.717770306131978,
+          "median": 7.498850000047241,
+          "p95": 15.070684999909641,
+          "max": 31.431999999767868
+        },
+        "lighting": {
+          "count": 980,
+          "mean": 11.585647346951841,
+          "median": 10.139749999780179,
+          "p95": 18.80523500030904,
+          "max": 42.16009999981907
+        },
+        "local_matching": {
+          "count": 980,
+          "mean": 38.60967102040729,
+          "median": 32.183050000185176,
+          "p95": 73.03444499953,
+          "max": 234.4874999998865
+        },
+        "tracking": {
+          "count": 980,
+          "mean": 0.3711372449065586,
+          "median": 0.32690000034563127,
+          "p95": 0.626624999267733,
+          "max": 2.0930000000589644
+        },
+        "localization": {
+          "count": 980,
+          "mean": 59.63540918366877,
+          "median": 50.42189999994662,
+          "p95": 106.71312999952528,
+          "max": 309.91140000060113
+        },
+        "replay_delivery_lag": {
+          "count": 980,
+          "mean": 7.256664387854731,
+          "median": 6.79809999974168,
+          "p95": 14.709225000069637,
+          "max": 18.16950000011275
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 99.3908842495996,
+      "error": null,
+      "started_utc": "2026-11-17T12:36:06+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 1,
+      "resources_start": {
+        "rss_bytes": 72499200,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          233819531250,
+          309607812500,
+          100980312500
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 72810496,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          236930468750,
+          313326718750,
+          102061406250
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.3526488775540721,
+        "p95": 0.6099200002154248
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 1,
+      "execution_order": 4,
+      "csv": "repeat_01/performance_unlimited.csv"
+    },
+    {
+      "elapsed_s": 60.007687299999816,
+      "camera_receive_fps": 24.996797368659877,
+      "localization_fps": 9.132163305350408,
+      "received_frame_count": 1500,
+      "processed_frame_count": 548,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 951,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.634,
+      "matching_attempt_count": 548,
+      "matching_success_count": 548,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 548,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 548,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 548,
+        "mean": 48.46855802919273,
+        "median": 43.517050000446034,
+        "p95": 83.79001500011327,
+        "max": 207.27770000030432
+      },
+      "frame_age_ms": {
+        "count": 548,
+        "mean": 23.14179306570317,
+        "median": 16.563099999984843,
+        "p95": 46.83674999973846,
+        "max": 48.192199999903096
+      },
+      "receive_to_result_ms": {
+        "count": 548,
+        "mean": 71.6103510948959,
+        "median": 67.46024999984002,
+        "p95": 114.37837000003127,
+        "max": 208.2127000003311
+      },
+      "position_error_m": {
+        "count": 548,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 548,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 548,
+          "mean": 0.5604987226165012,
+          "median": 0.496350000048551,
+          "p95": 0.8860950001235319,
+          "max": 3.6774999998669955
+        },
+        "preprocessing": {
+          "count": 548,
+          "mean": 0.5006817518218947,
+          "median": 0.4727999998976884,
+          "p95": 0.8205549995636828,
+          "max": 2.559300000029907
+        },
+        "hsv": {
+          "count": 548,
+          "mean": 6.763645255502199,
+          "median": 5.842850000135513,
+          "p95": 11.93410500027311,
+          "max": 30.08389999922656
+        },
+        "lighting": {
+          "count": 548,
+          "mean": 9.904310036519586,
+          "median": 9.206649999669025,
+          "p95": 15.796755000064875,
+          "max": 37.46599999976752
+        },
+        "local_matching": {
+          "count": 548,
+          "mean": 30.363190328442375,
+          "median": 27.439800000138348,
+          "p95": 54.47926499996356,
+          "max": 142.91460000094958
+        },
+        "tracking": {
+          "count": 548,
+          "mean": 0.2979009123839577,
+          "median": 0.27419999923949945,
+          "p95": 0.4962250001426582,
+          "max": 1.051999999617692
+        },
+        "localization": {
+          "count": 548,
+          "mean": 47.83135821166581,
+          "median": 43.08840000021519,
+          "p95": 83.13476000007539,
+          "max": 204.9233000007007
+        },
+        "replay_delivery_lag": {
+          "count": 548,
+          "mean": 7.652394890071403,
+          "median": 7.304549999389565,
+          "p95": 14.594274999626577,
+          "max": 62.01319999945554
+        }
+      },
+      "period_ms": 100,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 47.441838339269054,
+      "error": null,
+      "started_utc": "2026-11-17T12:37:10+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 72298496,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          237121875000,
+          313557031250,
+          102156093750
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 79147008,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          240715156250,
+          317682812500,
+          102830312500
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.28015912409440996,
+        "p95": 0.5164199999398987
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 2,
+      "execution_order": 1,
+      "csv": "repeat_02/performance_100ms.csv"
+    },
+    {
+      "elapsed_s": 60.001075400000445,
+      "camera_receive_fps": 24.982885556747686,
+      "localization_fps": 4.9165785451905055,
+      "received_frame_count": 1499,
+      "processed_frame_count": 295,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1204,
+      "drained_frame_count": 0,
+      "skipped_frame_ratio": 0.8032021347565044,
+      "matching_attempt_count": 295,
+      "matching_success_count": 295,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 295,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 295,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 295,
+        "mean": 38.92801627116877,
+        "median": 36.09960000085266,
+        "p95": 50.807239999994636,
+        "max": 88.0565999996179
+      },
+      "frame_age_ms": {
+        "count": 295,
+        "mean": 22.153574237304614,
+        "median": 16.117400000439375,
+        "p95": 46.62736000000223,
+        "max": 47.964600000341306
+      },
+      "receive_to_result_ms": {
+        "count": 295,
+        "mean": 61.08159050847338,
+        "median": 61.95509999997739,
+        "p95": 85.01735000018016,
+        "max": 118.23699999968085
+      },
+      "position_error_m": {
+        "count": 295,
+        "mean": 0.007071067811865323,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.0070710678118653236,
+      "yaw_error_deg": {
+        "count": 295,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 295,
+          "mean": 0.5910844067761515,
+          "median": 0.5439999995360267,
+          "p95": 0.7903600000645383,
+          "max": 11.311600000226463
+        },
+        "preprocessing": {
+          "count": 295,
+          "mean": 0.4183989830365182,
+          "median": 0.40669999998499407,
+          "p95": 0.6570700001248043,
+          "max": 0.9110000000873697
+        },
+        "hsv": {
+          "count": 295,
+          "mean": 4.950949152509442,
+          "median": 4.474600000321516,
+          "p95": 7.493579999481881,
+          "max": 10.564599999270285
+        },
+        "lighting": {
+          "count": 295,
+          "mean": 8.05739152542243,
+          "median": 8.005600000615232,
+          "p95": 10.68829999976515,
+          "max": 16.305000000102154
+        },
+        "local_matching": {
+          "count": 295,
+          "mean": 24.70416881360969,
+          "median": 23.156700000072306,
+          "p95": 33.62037000051714,
+          "max": 58.998000000428874
+        },
+        "tracking": {
+          "count": 295,
+          "mean": 0.25245423725117055,
+          "median": 0.2418000003672205,
+          "p95": 0.3389999995306425,
+          "max": 0.5544000005102134
+        },
+        "localization": {
+          "count": 295,
+          "mean": 38.38466067796709,
+          "median": 35.65299999991112,
+          "p95": 50.59648999967976,
+          "max": 86.66699999957928
+        },
+        "replay_delivery_lag": {
+          "count": 295,
+          "mean": 7.164862711628518,
+          "median": 6.730500000230677,
+          "p95": 14.528210000480613,
+          "max": 15.970999999808555
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 20.338177138738267,
+      "error": null,
+      "started_utc": "2026-11-17T12:38:14+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 72560640,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          240941718750,
+          317945312500,
+          102891562500
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 72859648,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          244933125000,
+          322316250000,
+          103320625000
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.2331006780014693,
+        "p95": 0.3628799999205512
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 2,
+      "execution_order": 2,
+      "csv": "repeat_02/performance_200ms.csv"
+    },
+    {
+      "elapsed_s": 60.007709200000136,
+      "camera_receive_fps": 24.996788246000843,
+      "localization_fps": 17.96435848612594,
+      "received_frame_count": 1500,
+      "processed_frame_count": 1078,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 421,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.2806666666666667,
+      "matching_attempt_count": 1078,
+      "matching_success_count": 1078,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 1078,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 1078,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 1078,
+        "mean": 55.0225767161466,
+        "median": 51.55720000038855,
+        "p95": 80.52069000032134,
+        "max": 141.3404000004448
+      },
+      "frame_age_ms": {
+        "count": 1078,
+        "mean": 21.523571892384922,
+        "median": 20.946299999650364,
+        "p95": 43.363955000268106,
+        "max": 48.58620000049996
+      },
+      "receive_to_result_ms": {
+        "count": 1078,
+        "mean": 76.54614860853151,
+        "median": 75.26380000035715,
+        "p95": 107.00683000009121,
+        "max": 159.94570000020758
+      },
+      "position_error_m": {
+        "count": 1078,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 1078,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 1078,
+          "mean": 0.6473016697623828,
+          "median": 0.5921500005570124,
+          "p95": 1.0046750005585636,
+          "max": 2.4051000000326894
+        },
+        "preprocessing": {
+          "count": 1078,
+          "mean": 0.32917560294363063,
+          "median": 0.30389999938051915,
+          "p95": 0.5238600002485327,
+          "max": 0.9674000002632965
+        },
+        "hsv": {
+          "count": 1078,
+          "mean": 8.18686846012038,
+          "median": 7.714350000242121,
+          "p95": 12.151629999880242,
+          "max": 20.83409999977448
+        },
+        "lighting": {
+          "count": 1078,
+          "mean": 10.655161966611704,
+          "median": 9.935200000199984,
+          "p95": 15.38941000003433,
+          "max": 22.23709999998391
+        },
+        "local_matching": {
+          "count": 1078,
+          "mean": 34.749104916517794,
+          "median": 32.09285000048112,
+          "p95": 52.83480500052064,
+          "max": 100.33029999976861
+        },
+        "tracking": {
+          "count": 1078,
+          "mean": 0.34944786640745595,
+          "median": 0.3270500005783106,
+          "p95": 0.5027449994486233,
+          "max": 1.158199999736098
+        },
+        "localization": {
+          "count": 1078,
+          "mean": 54.27181001853422,
+          "median": 50.880249999863736,
+          "p95": 79.82672000016464,
+          "max": 139.16640000024927
+        },
+        "replay_delivery_lag": {
+          "count": 1078,
+          "mean": 7.299296660903143,
+          "median": 6.921250000232249,
+          "p95": 14.792310000621,
+          "max": 26.214400000753812
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 101.28906903848258,
+      "error": null,
+      "started_utc": "2026-11-17T12:39:19+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 72585216,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          245142031250,
+          322563125000,
+          103397500000
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 74612736,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          248375468750,
+          326320312500,
+          104441093750
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.33179601112618123,
+        "p95": 0.5428900004062598
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 2,
+      "execution_order": 3,
+      "csv": "repeat_02/performance_unlimited.csv"
+    },
+    {
+      "elapsed_s": 60.00572589999956,
+      "camera_receive_fps": 25.014279512282528,
+      "localization_fps": 6.416054371904579,
+      "received_frame_count": 1501,
+      "processed_frame_count": 385,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1115,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.7428381079280479,
+      "matching_attempt_count": 385,
+      "matching_success_count": 385,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 385,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 385,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 385,
+        "mean": 43.337692207775014,
+        "median": 37.82050000063464,
+        "p95": 81.70231999993118,
+        "max": 111.96930000005523
+      },
+      "frame_age_ms": {
+        "count": 385,
+        "mean": 21.474478441575833,
+        "median": 15.989199999239645,
+        "p95": 46.68305999985023,
+        "max": 47.816100000090955
+      },
+      "receive_to_result_ms": {
+        "count": 385,
+        "mean": 64.81217064935085,
+        "median": 62.67770000067685,
+        "p95": 107.6966600001469,
+        "max": 146.9772999998895
+      },
+      "position_error_m": {
+        "count": 385,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 385,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 385,
+          "mean": 0.5881301298713525,
+          "median": 0.5436000001282082,
+          "p95": 0.8648799999718901,
+          "max": 5.617599999823142
+        },
+        "preprocessing": {
+          "count": 385,
+          "mean": 0.43873246752089284,
+          "median": 0.41120000059891026,
+          "p95": 0.7368999995378545,
+          "max": 0.9988000001612818
+        },
+        "hsv": {
+          "count": 385,
+          "mean": 5.67766493503851,
+          "median": 4.81480000053125,
+          "p95": 10.477260000334354,
+          "max": 17.194600000038918
+        },
+        "lighting": {
+          "count": 385,
+          "mean": 8.955676103874062,
+          "median": 8.356800000001385,
+          "p95": 14.81056000047829,
+          "max": 21.63239999936195
+        },
+        "local_matching": {
+          "count": 385,
+          "mean": 27.42705064936365,
+          "median": 23.858300000028976,
+          "p95": 52.63883999923562,
+          "max": 84.47509999950853
+        },
+        "tracking": {
+          "count": 385,
+          "mean": 0.2743555844322795,
+          "median": 0.2511000002414221,
+          "p95": 0.4865600003540744,
+          "max": 0.7132000000638072
+        },
+        "localization": {
+          "count": 385,
+          "mean": 42.77498389609092,
+          "median": 37.09470000012516,
+          "p95": 80.28372000044325,
+          "max": 110.46739999983402
+        },
+        "replay_delivery_lag": {
+          "count": 385,
+          "mean": 7.358961818457144,
+          "median": 6.910000000971195,
+          "p95": 14.48558000029152,
+          "max": 17.5546000000395
+        }
+      },
+      "period_ms": 150,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 30.205450776823504,
+      "error": null,
+      "started_utc": "2026-11-17T12:40:23+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 72478720,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          248573281250,
+          326556562500,
+          104530312500
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 78798848,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          252353593750,
+          330791562500,
+          105095312500
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.25699636363632244,
+        "p95": 0.45180000033724327
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 2,
+      "execution_order": 4,
+      "csv": "repeat_02/performance_150ms.csv"
+    },
+    {
+      "elapsed_s": 60.01476570000068,
+      "camera_receive_fps": 24.99384913869593,
+      "localization_fps": 4.915456997276866,
+      "received_frame_count": 1500,
+      "processed_frame_count": 295,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1204,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.8026666666666666,
+      "matching_attempt_count": 295,
+      "matching_success_count": 295,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 295,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 295,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 295,
+        "mean": 41.04514305086861,
+        "median": 36.793199999920034,
+        "p95": 58.19018999973197,
+        "max": 115.3334000000541
+      },
+      "frame_age_ms": {
+        "count": 295,
+        "mean": 17.392855254263974,
+        "median": 15.731999999843538,
+        "p95": 32.1154200001729,
+        "max": 47.36660000071424
+      },
+      "receive_to_result_ms": {
+        "count": 295,
+        "mean": 58.43799830513259,
+        "median": 58.10509999992064,
+        "p95": 85.08359000043129,
+        "max": 132.87310000032448
+      },
+      "position_error_m": {
+        "count": 295,
+        "mean": 0.007071067811865323,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.0070710678118653236,
+      "yaw_error_deg": {
+        "count": 295,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 295,
+          "mean": 0.5774955932268976,
+          "median": 0.5681000002368819,
+          "p95": 0.8413200003815291,
+          "max": 1.3266999994812068
+        },
+        "preprocessing": {
+          "count": 295,
+          "mean": 0.42482949149293203,
+          "median": 0.41119999968941556,
+          "p95": 0.6574300001375378,
+          "max": 1.029299999572686
+        },
+        "hsv": {
+          "count": 295,
+          "mean": 5.362708135550546,
+          "median": 4.656499999327934,
+          "p95": 8.611099999779983,
+          "max": 15.206900000521273
+        },
+        "lighting": {
+          "count": 295,
+          "mean": 8.660189830503843,
+          "median": 8.436600000095495,
+          "p95": 11.902289999670757,
+          "max": 23.001300000032643
+        },
+        "local_matching": {
+          "count": 295,
+          "mean": 25.8158366102195,
+          "median": 22.889199999553966,
+          "p95": 37.83415000007154,
+          "max": 75.58979999976145
+        },
+        "tracking": {
+          "count": 295,
+          "mean": 0.2629986440482198,
+          "median": 0.2506000000721542,
+          "p95": 0.3810999995948805,
+          "max": 0.5968999994365731
+        },
+        "localization": {
+          "count": 295,
+          "mean": 40.52796033896719,
+          "median": 36.344300000564544,
+          "p95": 57.87605999985318,
+          "max": 114.94049999964773
+        },
+        "replay_delivery_lag": {
+          "count": 295,
+          "mean": 7.185196610484805,
+          "median": 7.169999999860011,
+          "p95": 13.996640000186746,
+          "max": 15.981200000169338
+        }
+      },
+      "period_ms": 200,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 22.077900072514737,
+      "error": null,
+      "started_utc": "2026-11-17T12:41:27+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 73633792,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          252581562500,
+          331064531250,
+          105147343750
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 79020032,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          256504843750,
+          335376875000,
+          105635000000
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.24053254233506977,
+        "p95": 0.39842999976826854
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 3,
+      "execution_order": 1,
+      "csv": "repeat_03/performance_200ms.csv"
+    },
+    {
+      "elapsed_s": 60.01391049999984,
+      "camera_receive_fps": 25.010868105320416,
+      "localization_fps": 18.2457698703037,
+      "received_frame_count": 1501,
+      "processed_frame_count": 1095,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 405,
+      "drained_frame_count": 1,
+      "skipped_frame_ratio": 0.2698201199200533,
+      "matching_attempt_count": 1095,
+      "matching_success_count": 1095,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 1095,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 1095,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 1095,
+        "mean": 54.19102675800267,
+        "median": 49.97350000030565,
+        "p95": 79.25844000019418,
+        "max": 165.21990000001097
+      },
+      "frame_age_ms": {
+        "count": 1095,
+        "mean": 21.733843652973146,
+        "median": 21.477499999491556,
+        "p95": 43.352199999571894,
+        "max": 49.01090000021213
+      },
+      "receive_to_result_ms": {
+        "count": 1095,
+        "mean": 75.92487041097581,
+        "median": 74.28940000045259,
+        "p95": 107.60957999973469,
+        "max": 178.33629999950062
+      },
+      "position_error_m": {
+        "count": 1095,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 1095,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 1095,
+          "mean": 0.6333113242030507,
+          "median": 0.5827999993925914,
+          "p95": 0.964950000434328,
+          "max": 6.548899999870628
+        },
+        "preprocessing": {
+          "count": 1095,
+          "mean": 0.3266613698679689,
+          "median": 0.3005999997185427,
+          "p95": 0.49370999986422237,
+          "max": 0.832000000627886
+        },
+        "hsv": {
+          "count": 1095,
+          "mean": 8.027296986304435,
+          "median": 7.470700000340003,
+          "p95": 11.791800000082729,
+          "max": 24.421399999482674
+        },
+        "lighting": {
+          "count": 1095,
+          "mean": 10.525684383566807,
+          "median": 9.849499999290856,
+          "p95": 14.687560000220401,
+          "max": 27.611200000137615
+        },
+        "local_matching": {
+          "count": 1095,
+          "mean": 34.135823013701604,
+          "median": 31.05070000037813,
+          "p95": 52.075760000479924,
+          "max": 127.7777999994214
+        },
+        "tracking": {
+          "count": 1095,
+          "mean": 0.34603598171553507,
+          "median": 0.32359999931941275,
+          "p95": 0.4843300000175075,
+          "max": 1.2495999999373453
+        },
+        "localization": {
+          "count": 1095,
+          "mean": 53.36349671232956,
+          "median": 49.21620000004623,
+          "p95": 78.6172499998429,
+          "max": 163.87609999947017
+        },
+        "replay_delivery_lag": {
+          "count": 1095,
+          "mean": 7.183860365632809,
+          "median": 6.857500000478467,
+          "p95": 14.577050000389136,
+          "max": 26.889900001151545
+        }
+      },
+      "period_ms": 0,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 99.92474994609817,
+      "error": null,
+      "started_utc": "2026-11-17T12:42:31+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 72605696,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          256669218750,
+          335606250000,
+          105728125000
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 78884864,
+        "python_thread_count": 3,
+        "system_cpu_times": [
+          259907812500,
+          339405468750,
+          106730156250
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.33264401827182155,
+        "p95": 0.5056199996033682
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 3,
+      "execution_order": 2,
+      "csv": "repeat_03/performance_unlimited.csv"
+    },
+    {
+      "elapsed_s": 60.01185340000029,
+      "camera_receive_fps": 24.995062058856405,
+      "localization_fps": 6.182112015890484,
+      "received_frame_count": 1500,
+      "processed_frame_count": 371,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 1129,
+      "drained_frame_count": 0,
+      "skipped_frame_ratio": 0.7526666666666667,
+      "matching_attempt_count": 371,
+      "matching_success_count": 371,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 371,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 371,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 371,
+        "mean": 77.03989433958985,
+        "median": 62.16299999960029,
+        "p95": 199.97345000001587,
+        "max": 475.48570000071777
+      },
+      "frame_age_ms": {
+        "count": 371,
+        "mean": 23.084675471701694,
+        "median": 19.0705999993952,
+        "p95": 46.965649999947345,
+        "max": 49.76220000025933
+      },
+      "receive_to_result_ms": {
+        "count": 371,
+        "mean": 100.12456981129154,
+        "median": 86.5272000000914,
+        "p95": 220.86569999964922,
+        "max": 520.0055000004795
+      },
+      "position_error_m": {
+        "count": 371,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 371,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 371,
+          "mean": 0.6750865229084615,
+          "median": 0.628800000413321,
+          "p95": 1.2165000002823945,
+          "max": 4.344299999502255
+        },
+        "preprocessing": {
+          "count": 371,
+          "mean": 0.5726770889500181,
+          "median": 0.5384000005506095,
+          "p95": 1.0775000000649015,
+          "max": 1.7668999998932122
+        },
+        "hsv": {
+          "count": 371,
+          "mean": 10.708618867899123,
+          "median": 9.246499999790103,
+          "p95": 26.986050000232353,
+          "max": 40.261000000100466
+        },
+        "lighting": {
+          "count": 371,
+          "mean": 15.496997843666085,
+          "median": 14.96690000021772,
+          "p95": 32.640100000207894,
+          "max": 86.20880000034958
+        },
+        "local_matching": {
+          "count": 371,
+          "mean": 48.87981401618477,
+          "median": 38.67450000143435,
+          "p95": 131.1531000001196,
+          "max": 402.5776999997106
+        },
+        "tracking": {
+          "count": 371,
+          "mean": 0.4216633423485632,
+          "median": 0.3535999994710437,
+          "p95": 0.8563000005779031,
+          "max": 1.724599999761267
+        },
+        "localization": {
+          "count": 371,
+          "mean": 76.0825215633441,
+          "median": 61.520000000200525,
+          "p95": 197.28269999995973,
+          "max": 472.8864999997313
+        },
+        "replay_delivery_lag": {
+          "count": 371,
+          "mean": 7.410412668067719,
+          "median": 6.935799999155279,
+          "p95": 14.859399999750167,
+          "max": 16.023700000005192
+        }
+      },
+      "period_ms": 150,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 47.438544865871215,
+      "error": null,
+      "started_utc": "2026-11-17T12:43:35+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 74170368,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          260106718750,
+          339646093750,
+          106814531250
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 73183232,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          263504687500,
+          343569531250,
+          107692343750
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.39994420483394594,
+        "p95": 0.8980500001598557
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 3,
+      "execution_order": 3,
+      "csv": "repeat_03/performance_150ms.csv"
+    },
+    {
+      "elapsed_s": 60.01155639999979,
+      "camera_receive_fps": 24.995185760588026,
+      "localization_fps": 9.148237988375218,
+      "received_frame_count": 1500,
+      "processed_frame_count": 549,
+      "stale_frame_count": 0,
+      "skipped_frame_count": 951,
+      "drained_frame_count": 0,
+      "skipped_frame_ratio": 0.634,
+      "matching_attempt_count": 549,
+      "matching_success_count": 549,
+      "matching_success_rate": 1.0,
+      "accepted_observation_count": 549,
+      "accepted_observation_rate": 1.0,
+      "tracking_loss_count": 0,
+      "relocalization_s": null,
+      "truth_accepted_count": 549,
+      "wrong_accepted_count": 0,
+      "wrong_accepted_rate": 0.0,
+      "processing_ms": {
+        "count": 549,
+        "mean": 55.973007286002115,
+        "median": 52.58010000034119,
+        "p95": 95.56730000022071,
+        "max": 136.8136000000959
+      },
+      "frame_age_ms": {
+        "count": 549,
+        "mean": 23.015633697634392,
+        "median": 16.132300000208488,
+        "p95": 46.93524000012985,
+        "max": 48.08249999950931
+      },
+      "receive_to_result_ms": {
+        "count": 549,
+        "mean": 78.9886409836365,
+        "median": 77.18480000039563,
+        "p95": 121.00265999997646,
+        "max": 178.08289999993576
+      },
+      "position_error_m": {
+        "count": 549,
+        "mean": 0.007071067811865324,
+        "median": 0.007071067811865324,
+        "p95": 0.007071067811865324,
+        "max": 0.007071067811865324
+      },
+      "position_rmse_m": 0.007071067811865324,
+      "yaw_error_deg": {
+        "count": 549,
+        "mean": 0.5,
+        "median": 0.5,
+        "p95": 0.5,
+        "max": 0.5
+      },
+      "stages_ms": {
+        "decode": {
+          "count": 549,
+          "mean": 0.5563734062137011,
+          "median": 0.4963999999745283,
+          "p95": 0.8723800001462223,
+          "max": 8.724500000425905
+        },
+        "preprocessing": {
+          "count": 549,
+          "mean": 0.5205974498535886,
+          "median": 0.5361999992601341,
+          "p95": 0.8258599997134297,
+          "max": 1.0457999997015577
+        },
+        "hsv": {
+          "count": 549,
+          "mean": 7.911985245901817,
+          "median": 6.800300000577408,
+          "p95": 14.16112000024441,
+          "max": 21.027300000241667
+        },
+        "lighting": {
+          "count": 549,
+          "mean": 12.755947905323092,
+          "median": 13.926799999353534,
+          "p95": 17.974060000051395,
+          "max": 26.764899999761838
+        },
+        "local_matching": {
+          "count": 549,
+          "mean": 33.65572568305446,
+          "median": 28.85139999943931,
+          "p95": 64.55696000011814,
+          "max": 91.2188000002061
+        },
+        "tracking": {
+          "count": 549,
+          "mean": 0.3301096539208995,
+          "median": 0.2924999998867861,
+          "p95": 0.561780000134604,
+          "max": 0.8600000001024455
+        },
+        "localization": {
+          "count": 549,
+          "mean": 55.176322040054075,
+          "median": 51.541899999392626,
+          "p95": 94.5004199997129,
+          "max": 134.49629999922763
+        },
+        "replay_delivery_lag": {
+          "count": 549,
+          "mean": 7.7995074684299475,
+          "median": 7.504600001084327,
+          "p95": 14.873919999990903,
+          "max": 19.406100000196602
+        }
+      },
+      "period_ms": 100,
+      "requested_s": 60,
+      "complete": true,
+      "process_cpu_percent": 53.16684304491744,
+      "error": null,
+      "started_utc": "2026-11-17T12:44:39+00:00",
+      "warmup_s": 4.0,
+      "gc_collections": 0,
+      "resources_start": {
+        "rss_bytes": 77615104,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          263741093750,
+          343840468750,
+          107746250000
+        ]
+      },
+      "resources_end": {
+        "rss_bytes": 73195520,
+        "python_thread_count": 2,
+        "system_cpu_times": [
+          267649687500,
+          348083750000,
+          108304375000
+        ]
+      },
+      "log_write_ms": {
+        "mean": 0.29491129323531023,
+        "p95": 0.5751800001235098
+      },
+      "stream_status": null,
+      "timestamps_preserved": true,
+      "repeat": 3,
+      "execution_order": 4,
+      "csv": "repeat_03/performance_100ms.csv"
+    }
+  ],
+  "complete": true
+}

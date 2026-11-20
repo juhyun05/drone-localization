@@ -1,0 +1,10 @@
+Image ID: {{ image_id }}
+{% if captured_at %}
+Captured at: {{ captured_at }}
+{% endif %}
+{# TODO: location is not wired up yet; this block renders once a Location is passed in. #}
+{% if location %}
+Location: {{ location.name }}{% if location.latitude is not none %} ({{ location.latitude }}, {{ location.longitude }}){% endif %}
+
+{% endif %}
+Assess the attached photo.

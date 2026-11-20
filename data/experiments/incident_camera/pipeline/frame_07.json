@@ -1,0 +1,67 @@
+{
+ "pose_rejected_by_tracker": false,
+ "pose": {
+  "position_m": [
+   1.4672,
+   1.1517,
+   0.887
+  ],
+  "position_std_mm": [
+   7.3,
+   6.8,
+   3.0
+  ],
+  "heading_deg": 75.06,
+  "tilt_deg": 6.16,
+  "rms_px": 0.718,
+  "tags": [
+   11,
+   34,
+   37
+  ],
+  "dropped_tags": []
+ },
+ "tracker": {
+  "status": "tracking",
+  "position_m": [
+   1.4672,
+   1.1517,
+   0.887
+  ]
+ },
+ "photos": [
+  {
+   "corners_px": [
+    [
+     90.30000305175781,
+     216.89999389648438
+    ],
+    [
+     73.30000305175781,
+     153.8000030517578
+    ],
+    [
+     115.30000305175781,
+     141.3000030517578
+    ],
+    [
+     132.89999389648438,
+     203.5
+    ]
+   ],
+   "big_enough_for_llm": false,
+   "map_center_m": [
+    1.5652,
+    1.5426
+   ],
+   "slot": 3,
+   "location": {
+    "name": "slot S3, 홍&박 KI빌딩 (E4), map (1.565, 1.543) m",
+    "latitude": 36.3679795,
+    "longitude": 127.3638404
+   },
+   "crop": "frame_07_photo1.png",
+   "report": null
+  }
+ ]
+}

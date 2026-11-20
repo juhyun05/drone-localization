@@ -1,2 +1,0 @@
-success,reason,score,margin,x_m,y_m,yaw_deg,span_m,match_ms,building_fraction,true_x_m,true_y_m,truth_yaw_deg,error_cm,yaw_error_deg,preprocess_ms,illumination,shadow_aware,effective_coverage,shadow_ratio
-True,matched,0.7006321549415588,0.4208688735961914,1.05,0.8125,115.0,0.6745085168424266,492.33230000027106,0.18747395833333333,1.05,0.81,115.0,0.24999999999999467,0.0,25.493300000562158,combined,True,0.7668540477752686,0.40024739583333335

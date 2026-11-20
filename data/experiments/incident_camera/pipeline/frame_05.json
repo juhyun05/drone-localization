@@ -1,0 +1,40 @@
+{
+ "pose_rejected_by_tracker": false,
+ "pose": {
+  "position_m": [
+   0.684,
+   0.7058,
+   0.9285
+  ],
+  "position_std_mm": [
+   3.5,
+   3.1,
+   1.0
+  ],
+  "heading_deg": 216.03,
+  "tilt_deg": 1.04,
+  "rms_px": 0.703,
+  "tags": [
+   15,
+   17,
+   18,
+   20,
+   21,
+   22,
+   23,
+   24,
+   27,
+   38
+  ],
+  "dropped_tags": []
+ },
+ "tracker": {
+  "status": "tracking",
+  "position_m": [
+   0.684,
+   0.7058,
+   0.9285
+  ]
+ },
+ "photos": []
+}

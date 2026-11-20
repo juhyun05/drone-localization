@@ -1,0 +1,3 @@
+.venv/
+__pycache__/
+firmware/xiao_camera_stream/wifi_secrets.h

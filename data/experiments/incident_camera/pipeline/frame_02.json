@@ -1,0 +1,65 @@
+{
+ "pose_rejected_by_tracker": false,
+ "pose": {
+  "position_m": [
+   1.144,
+   2.2226,
+   0.3267
+  ],
+  "position_std_mm": [
+   7.6,
+   6.6,
+   5.3
+  ],
+  "heading_deg": 19.39,
+  "tilt_deg": 4.35,
+  "rms_px": 0.204,
+  "tags": [
+   2
+  ],
+  "dropped_tags": []
+ },
+ "tracker": {
+  "status": "tracking",
+  "position_m": [
+   1.144,
+   2.2226,
+   0.3267
+  ]
+ },
+ "photos": [
+  {
+   "corners_px": [
+    [
+     248.1999969482422,
+     195.6999969482422
+    ],
+    [
+     427.79998779296875,
+     336.8999938964844
+    ],
+    [
+     350.6000061035156,
+     438.20001220703125
+    ],
+    [
+     169.8000030517578,
+     293.29998779296875
+    ]
+   ],
+   "big_enough_for_llm": true,
+   "map_center_m": [
+    1.1252,
+    2.2086
+   ],
+   "slot": 2,
+   "location": {
+    "name": "slot S2, 학술문화관 (E9), map (1.125, 2.209) m",
+    "latitude": 36.3696803,
+    "longitude": 127.3623993
+   },
+   "crop": "frame_02_photo1.png",
+   "report": null
+  }
+ ]
+}

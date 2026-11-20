@@ -1,0 +1,32 @@
+{
+  "language": "English",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "image_detail": "auto",
+  "max_output_tokens": 4000,
+  "timeout_s": 60.0,
+  "max_retries": 2,
+  "category_examples": [
+    "fire",
+    "medical_emergency",
+    "unauthorized_access",
+    "illegal_parking",
+    "vandalism",
+    "theft",
+    "flooding",
+    "fight"
+  ],
+  "urgency_definitions": {
+    "none": "Normal scene. No action needed.",
+    "low": "Minor issue. Log it and check when convenient.",
+    "medium": "Needs an officer soon, but no immediate danger.",
+    "high": "Immediate danger to people or property. Dispatch now."
+  },
+  "prompts_dir": "prompts",
+  "image_dir": "/private/tmp/claude-501/-Users-chaejeonghyeon/a336d310-739a-4b74-a229-a985412db9c9/scratchpad/photo_cam120",
+  "labels_csv": "labels.csv",
+  "outputs_dir": "outputs",
+  "spend_log": "outputs/spend.csv",
+  "total_budget_usd": 15.0,
+  "stop_at_usd": 12.0
+}

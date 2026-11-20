@@ -1,0 +1,32 @@
+{
+  "language": "English",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "image_detail": "auto",
+  "max_output_tokens": 4000,
+  "timeout_s": 60.0,
+  "max_retries": 2,
+  "category_examples": [
+    "fire",
+    "medical_emergency",
+    "unauthorized_access",
+    "illegal_parking",
+    "vandalism",
+    "theft",
+    "flooding",
+    "fight"
+  ],
+  "urgency_definitions": {
+    "none": "Normal scene. No action needed.",
+    "low": "Minor issue. Log it and check when convenient.",
+    "medium": "Needs an officer soon, but no immediate danger.",
+    "high": "Immediate danger to people or property. Dispatch now."
+  },
+  "prompts_dir": "/Users/chaejeonghyeon/Documents/kaist_me/me340/main/LLM_detects/prompts",
+  "image_dir": "/Users/chaejeonghyeon/Documents/kaist_me/me340/main/LLM_detects/photo_gray",
+  "labels_csv": "/Users/chaejeonghyeon/Documents/kaist_me/me340/main/LLM_detects/labels.csv",
+  "outputs_dir": "/Users/chaejeonghyeon/Documents/kaist_me/me340/main/LLM_detects/outputs",
+  "spend_log": "/Users/chaejeonghyeon/Documents/kaist_me/me340/main/LLM_detects/outputs/spend.csv",
+  "total_budget_usd": 15.0,
+  "stop_at_usd": 12.0
+}

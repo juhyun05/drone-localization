@@ -1,0 +1,65 @@
+{
+ "pose_rejected_by_tracker": false,
+ "pose": {
+  "position_m": [
+   0.2986,
+   2.3065,
+   0.3043
+  ],
+  "position_std_mm": [
+   6.1,
+   6.0,
+   4.4
+  ],
+  "heading_deg": 62.87,
+  "tilt_deg": 6.64,
+  "rms_px": 0.102,
+  "tags": [
+   0
+  ],
+  "dropped_tags": []
+ },
+ "tracker": {
+  "status": "tracking",
+  "position_m": [
+   0.2986,
+   2.3065,
+   0.3043
+  ]
+ },
+ "photos": [
+  {
+   "corners_px": [
+    [
+     291.8999938964844,
+     407.6000061035156
+    ],
+    [
+     274.70001220703125,
+     218.0
+    ],
+    [
+     411.0,
+     204.6999969482422
+    ],
+    [
+     433.29998779296875,
+     393.20001220703125
+    ]
+   ],
+   "big_enough_for_llm": true,
+   "map_center_m": [
+    0.3074,
+    2.2892
+   ],
+   "slot": 1,
+   "location": {
+    "name": "slot S1, 교육지원동 (W8), map (0.307, 2.289) m",
+    "latitude": 36.3698527,
+    "longitude": 127.3597835
+   },
+   "crop": "frame_08_photo1.png",
+   "report": null
+  }
+ ]
+}

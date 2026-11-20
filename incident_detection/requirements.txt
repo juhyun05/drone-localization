@@ -1,0 +1,12 @@
+# One environment for the whole folder (conda env llm_detects, Python 3.11).
+# LLM_detects: the LLM incident detector
+openai==3.51.0
+jinja2==3.1.6
+pydantic==2.14.3
+python-dotenv==1.2.4
+# localization (including the base-map script)
+opencv-python==5.1.0.95
+numpy==2.4.6
+shapely==2.2.0
+matplotlib==3.11.2
+pyproj==3.7.2

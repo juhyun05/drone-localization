@@ -1,0 +1,33 @@
+{
+ "pose_rejected_by_tracker": false,
+ "pose": null,
+ "tracker": null,
+ "photos": [
+  {
+   "corners_px": [
+    [
+     218.0,
+     378.1000061035156
+    ],
+    [
+     426.79998779296875,
+     315.3999938964844
+    ],
+    [
+     476.1000061035156,
+     470.29998779296875
+    ],
+    [
+     241.8000030517578,
+     469.20001220703125
+    ]
+   ],
+   "big_enough_for_llm": true,
+   "map_center_m": null,
+   "slot": null,
+   "location": null,
+   "crop": "frame_06_photo1.png",
+   "report": null
+  }
+ ]
+}

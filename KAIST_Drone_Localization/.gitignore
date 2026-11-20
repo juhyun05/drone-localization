@@ -1,7 +1,0 @@
-.venv/
-__pycache__/
-firmware/xiao_camera_stream/wifi_secrets.h
-recordings/
-experiments/xiao_real_camera/sample_frames/
-experiments/xiao_real_camera/calibration/
-experiments/xiao_real_camera/*.avi

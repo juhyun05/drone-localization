@@ -1,0 +1,6 @@
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+pillow>=10
+pypdf>=4,<7
+pyproj>=3.6,<4
+shapely>=2,<3

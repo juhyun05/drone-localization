@@ -1,0 +1,6 @@
+# AprilTag registration checks the exact bytes of the reference map.
+data/maps/KAIST_model_features_2p5m.json text eol=lf
+# Preserve the bytes recorded in the replay manifest and print archive.
+data/experiments/localization/performance_optimization/input/stationary.csv text eol=crlf
+data/experiments/localization/performance_optimization/input/stationary.json text eol=crlf
+data/print/campus/*.eps text eol=lf

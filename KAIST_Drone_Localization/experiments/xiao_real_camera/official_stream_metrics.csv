@@ -1,2 +1,0 @@
-measured_at,requested_s,elapsed_s,received,receive_fps,consumed,state,error,buffer_overwrites,sender_gaps,decode_errors,disconnects,reconnections,latest_receive_age_s,cpu_percent,width,height,localization_fps,receive_interval_mean_ms,receive_interval_p95_ms,decode_mean_ms,decode_p95_ms,match_mean_ms,match_p95_ms
-2026-11-16T06:06:00+09:00,30.0,30.0,70,2.3333333333333335,70,streaming,,0,,0,0,0,0.4530000000004293,0.20833333333333334,320,240,,422.1014492753623,837.3999999999791,0.4506342856594919,0.7835950001663149,,

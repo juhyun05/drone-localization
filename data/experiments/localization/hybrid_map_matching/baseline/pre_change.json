@@ -1,0 +1,122 @@
+[
+  {
+    "scene": "rich",
+    "x": 1.9200000000000004,
+    "y": 1.4400000000000002,
+    "yaw": 17,
+    "span": 0.3777247694317589,
+    "coverage": 0.2977314814814815,
+    "global": {
+      "success": true,
+      "reason": "matched",
+      "score": 0.7263843648208469,
+      "margin": 0.29024729316975656,
+      "x_m": 1.9125,
+      "y_m": 1.4375,
+      "yaw_deg": 17.5,
+      "span_m": 0.3968968090641773,
+      "ms": 744.615600000543
+    },
+    "local": {
+      "success": true,
+      "reason": "matched",
+      "score": 0.71875,
+      "margin": 0.282508389261745,
+      "x_m": 1.9125,
+      "y_m": 1.4375,
+      "yaw_deg": 15.0,
+      "span_m": 0.4079427509862997,
+      "ms": 80.48109999981534
+    }
+  },
+  {
+    "scene": "mixed",
+    "x": 1.2000000000000002,
+    "y": 0.9600000000000002,
+    "yaw": 17,
+    "span": 0.3777247694317589,
+    "coverage": 0.08363425925925926,
+    "global": {
+      "success": false,
+      "reason": "ambiguous pose",
+      "score": 0.8875,
+      "margin": 0.0028846153846153744,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "ms": 361.4770000003773
+    },
+    "local": {
+      "success": false,
+      "reason": "span reaches local search limit",
+      "score": 0.9178082191780822,
+      "margin": 0.07365237502223809,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "ms": 46.02270000032149
+    }
+  },
+  {
+    "scene": "road",
+    "x": 2.08,
+    "y": 0.8,
+    "yaw": 17,
+    "span": 0.3777247694317589,
+    "coverage": 0.0,
+    "global": {
+      "success": false,
+      "reason": "insufficient visible buildings",
+      "score": 0.0,
+      "margin": 0.0,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "ms": 1.7764000003808178
+    },
+    "local": {
+      "success": false,
+      "reason": "insufficient visible buildings",
+      "score": 0.0,
+      "margin": 0.0,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "ms": 1.680800000031013
+    }
+  },
+  {
+    "scene": "blank",
+    "x": 2.16,
+    "y": 0.48000000000000004,
+    "yaw": 17,
+    "span": 0.3777247694317589,
+    "coverage": 0.0,
+    "global": {
+      "success": false,
+      "reason": "insufficient visible buildings",
+      "score": 0.0,
+      "margin": 0.0,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "ms": 1.7785999989428092
+    },
+    "local": {
+      "success": false,
+      "reason": "insufficient visible buildings",
+      "score": 0.0,
+      "margin": 0.0,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "ms": 1.7437000005884329
+    }
+  }
+]

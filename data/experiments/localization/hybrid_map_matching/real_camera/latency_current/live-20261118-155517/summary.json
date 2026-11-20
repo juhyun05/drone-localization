@@ -1,0 +1,167 @@
+{
+  "elapsed_s": 15.00920430000042,
+  "camera_receive_fps": 12.059266859336104,
+  "localization_fps": 9.66073864421953,
+  "received_frame_count": 181,
+  "processed_frame_count": 145,
+  "stale_frame_count": 0,
+  "skipped_frame_count": 35,
+  "drained_frame_count": 1,
+  "skipped_frame_ratio": 0.19337016574585636,
+  "matching_attempt_count": 145,
+  "matching_success_count": 145,
+  "matching_success_rate": 1.0,
+  "accepted_observation_count": 145,
+  "accepted_observation_rate": 1.0,
+  "tracking_loss_count": 0,
+  "relocalization_s": null,
+  "truth_accepted_count": 0,
+  "wrong_accepted_count": null,
+  "wrong_accepted_rate": null,
+  "processing_ms": {
+    "count": 145,
+    "mean": 49.25124413796233,
+    "median": 26.119900000594498,
+    "p95": 66.0870799993063,
+    "max": 887.3809999995501
+  },
+  "frame_age_ms": {
+    "count": 145,
+    "mean": 11.358239310344477,
+    "median": 1.774700000169105,
+    "p95": 39.02414000021961,
+    "max": 289.58739999961836
+  },
+  "receive_to_result_ms": {
+    "count": 145,
+    "mean": 60.609483448306804,
+    "median": 33.450200000515906,
+    "p95": 116.55927999981925,
+    "max": 892.6602999999886
+  },
+  "position_error_m": null,
+  "position_rmse_m": null,
+  "yaw_error_deg": null,
+  "stages_ms": {
+    "jpeg_receive": {
+      "count": 145,
+      "mean": 61.90050896552591,
+      "median": 13.824499999827822,
+      "p95": 301.90343999947794,
+      "max": 2085.306799999671
+    },
+    "decode": {
+      "count": 145,
+      "mean": 0.6099806896662782,
+      "median": 0.5224999995334656,
+      "p95": 1.0813200002303323,
+      "max": 2.7334999995218823
+    },
+    "jpeg_receive_decode": {
+      "count": 145,
+      "mean": 62.51048965519219,
+      "median": 14.307200000075682,
+      "p95": 302.36829999976175,
+      "max": 2086.113899999873
+    },
+    "preprocessing": {
+      "count": 145,
+      "mean": 0.019793103468867323,
+      "median": 0.015099999473022763,
+      "p95": 0.04293999991205054,
+      "max": 0.16060000052675605
+    },
+    "hsv": {
+      "count": 145,
+      "mean": 4.134251724136792,
+      "median": 4.033399999570975,
+      "p95": 6.1112600000342345,
+      "max": 7.445199999892793
+    },
+    "road": {
+      "count": 145,
+      "mean": 3.001053103472604,
+      "median": 2.7697000004991423,
+      "p95": 4.286979999960749,
+      "max": 5.953400000180409
+    },
+    "lighting": {
+      "count": 145,
+      "mean": 8.719492413773219,
+      "median": 8.280699999886565,
+      "p95": 13.761279999926037,
+      "max": 17.412499999409192
+    },
+    "global_matching": {
+      "count": 3,
+      "mean": 834.2822666672873,
+      "median": 861.9761000018116,
+      "p95": 862.853869999708,
+      "max": 862.9513999994742
+    },
+    "local_matching": {
+      "count": 142,
+      "mean": 15.765559859183142,
+      "median": 7.661300000108895,
+      "p95": 40.146784999569704,
+      "max": 82.53490000060992
+    },
+    "tracking": {
+      "count": 145,
+      "mean": 0.2974496551077805,
+      "median": 0.26059999981953297,
+      "p95": 0.4199199996946844,
+      "max": 2.9090999996697064
+    },
+    "localization": {
+      "count": 145,
+      "mean": 48.8741765517324,
+      "median": 25.84649999971589,
+      "p95": 65.8698400000503,
+      "max": 887.0440000000599
+    }
+  },
+  "period_ms": 0,
+  "requested_s": 15,
+  "complete": true,
+  "process_cpu_percent": 48.720104369555386,
+  "error": null,
+  "started_utc": "2026-11-18T06:55:17+00:00",
+  "warmup_s": 0,
+  "gc_collections": 8,
+  "resources_start": {
+    "rss_bytes": 49672192,
+    "python_thread_count": 2,
+    "system_cpu_times": [
+      277277968750,
+      329754531250,
+      83157968750
+    ]
+  },
+  "resources_end": {
+    "rss_bytes": 71143424,
+    "python_thread_count": 2,
+    "system_cpu_times": [
+      278191093750,
+      330777968750,
+      83335781250
+    ]
+  },
+  "log_write_ms": {
+    "mean": 0.3151124138169288,
+    "p95": 0.47903999984555345
+  },
+  "stream_status": {
+    "state": "streaming",
+    "error": "",
+    "received": 181,
+    "source_gaps": null,
+    "decode_errors": 0,
+    "disconnects": 0,
+    "reconnections": 0,
+    "connection": 1,
+    "receive_fps": 20.731296847677918,
+    "last_received_at": 5176.7361744
+  },
+  "timestamps_preserved": null
+}

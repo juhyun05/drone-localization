@@ -1,0 +1,431 @@
+{
+  "building-calibrated": {
+    "result": {
+      "success": true,
+      "reason": "matched",
+      "score": 0.4093247950077057,
+      "margin": 0.10619890689849854,
+      "x_m": 1.1625,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.2838529722866383,
+      "observation_source": "BUILDING",
+      "building_score": 0.4093247950077057,
+      "road_score": null,
+      "building_coverage": 0.038983481365721676,
+      "road_coverage": null,
+      "building_weight": 1.0
+    },
+    "road_diversity": 0.534178753676855,
+    "best": {
+      "success": true,
+      "reason": "matched",
+      "score": 0.4093247950077057,
+      "margin": 0.10619890689849854,
+      "x_m": 1.1625,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.2838529722866383,
+      "observation_source": "BUILDING",
+      "building_score": 0.4093247950077057,
+      "road_score": null,
+      "building_coverage": 0.038983481365721676,
+      "road_coverage": null,
+      "building_weight": 1.0
+    },
+    "second": {
+      "score": 0.30312588810920715,
+      "x_m": 1.25,
+      "y_m": 1.5625,
+      "yaw_deg": 250.0,
+      "span_m": 0.5671917938708962
+    },
+    "candidates": [
+      {
+        "score": 0.4093247950077057,
+        "x_m": 1.1625,
+        "y_m": 1.2875,
+        "yaw_deg": 272.5,
+        "span_m": 1.2838529722866383
+      },
+      {
+        "score": 0.30312588810920715,
+        "x_m": 1.25,
+        "y_m": 1.5625,
+        "yaw_deg": 250.0,
+        "span_m": 0.5671917938708962
+      },
+      {
+        "score": 0.27368542551994324,
+        "x_m": 1.25,
+        "y_m": 1.4625,
+        "yaw_deg": 265.0,
+        "span_m": 0.7087443019003167
+      },
+      {
+        "score": 0.26372230052948,
+        "x_m": 1.3125,
+        "y_m": 1.525,
+        "yaw_deg": 270.0,
+        "span_m": 0.44281184151837755
+      },
+      {
+        "score": 0.25172632932662964,
+        "x_m": 0.55,
+        "y_m": 2.025,
+        "yaw_deg": 305.0,
+        "span_m": 0.4652874821496925
+      }
+    ]
+  },
+  "adaptive-default-hue": {
+    "result": {
+      "success": false,
+      "reason": "low match score",
+      "score": 0.46854421496391296,
+      "margin": 0.05128994584083557,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "observation_source": null,
+      "building_score": null,
+      "road_score": 0.46854421496391296,
+      "building_coverage": 0.005791687336750329,
+      "road_coverage": 0.09487890909969186,
+      "building_weight": 0.0
+    },
+    "road_diversity": 0.5459648479410845,
+    "best": {
+      "score": 0.46854421496391296,
+      "x_m": 1.175,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.2838529722866385
+    },
+    "second": {
+      "score": 0.4172542691230774,
+      "x_m": 1.1875,
+      "y_m": 1.2625,
+      "yaw_deg": 272.5,
+      "span_m": 0.8639689813561049
+    },
+    "candidates": [
+      {
+        "score": 0.46854421496391296,
+        "x_m": 1.175,
+        "y_m": 1.2875,
+        "yaw_deg": 272.5,
+        "span_m": 1.2838529722866385
+      },
+      {
+        "score": 0.4172542691230774,
+        "x_m": 1.1875,
+        "y_m": 1.2625,
+        "yaw_deg": 272.5,
+        "span_m": 0.8639689813561049
+      },
+      {
+        "score": 0.36911776661872864,
+        "x_m": 2.025,
+        "y_m": 2.075,
+        "yaw_deg": 185.0,
+        "span_m": 0.5533231842941159
+      },
+      {
+        "score": 0.3687537610530853,
+        "x_m": 1.1125,
+        "y_m": 1.4,
+        "yaw_deg": 270.0,
+        "span_m": 0.8021303273589464
+      },
+      {
+        "score": 0.3671056926250458,
+        "x_m": 0.9375,
+        "y_m": 1.7625,
+        "yaw_deg": 270.0,
+        "span_m": 0.6109183254517356
+      }
+    ]
+  },
+  "adaptive-calibrated": {
+    "result": {
+      "success": false,
+      "reason": "low match score",
+      "score": 0.4502262473106384,
+      "margin": 0.17986410856246948,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "observation_source": null,
+      "building_score": 0.3950483798980713,
+      "road_score": 0.47993001341819763,
+      "building_coverage": 0.038983481365721676,
+      "road_coverage": 0.09216569146529462,
+      "building_weight": 0.3499434263894921
+    },
+    "road_diversity": 0.534178753676855,
+    "best": {
+      "score": 0.4502262473106384,
+      "x_m": 1.175,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.2838529722866383
+    },
+    "second": {
+      "score": 0.27036213874816895,
+      "x_m": 1.2125,
+      "y_m": 1.2125,
+      "yaw_deg": 272.5,
+      "span_m": 1.1628160184355618
+    },
+    "candidates": [
+      {
+        "score": 0.4502262473106384,
+        "x_m": 1.175,
+        "y_m": 1.2875,
+        "yaw_deg": 272.5,
+        "span_m": 1.2838529722866383
+      },
+      {
+        "score": 0.26582613587379456,
+        "x_m": 1.175,
+        "y_m": 1.275,
+        "yaw_deg": 272.5,
+        "span_m": 1.0023158040020792
+      },
+      {
+        "score": 0.255242258310318,
+        "x_m": 0.925,
+        "y_m": 1.8125,
+        "yaw_deg": 90.0,
+        "span_m": 0.526594992541112
+      },
+      {
+        "score": 0.2551850974559784,
+        "x_m": 0.6625,
+        "y_m": 2.2375,
+        "yaw_deg": 97.5,
+        "span_m": 0.35437215095015834
+      },
+      {
+        "score": 0.24974700808525085,
+        "x_m": 1.7,
+        "y_m": 0.9375,
+        "yaw_deg": 162.5,
+        "span_m": 0.3372542584212133
+      }
+    ]
+  },
+  "adaptive-wide": {
+    "result": {
+      "success": false,
+      "reason": "low match score",
+      "score": 0.4482725262641907,
+      "margin": 0.1670418679714203,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "observation_source": null,
+      "building_score": 0.3898386061191559,
+      "road_score": 0.4797290861606598,
+      "building_coverage": 0.038983481365721676,
+      "road_coverage": 0.09216569146529462,
+      "building_weight": 0.3499434263894921
+    },
+    "road_diversity": 0.534178753676855,
+    "best": {
+      "score": 0.4482725262641907,
+      "x_m": 1.175,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.2766993329744698
+    },
+    "second": {
+      "score": 0.2812306582927704,
+      "x_m": 1.2125,
+      "y_m": 1.2125,
+      "yaw_deg": 272.5,
+      "span_m": 1.0317812732077412
+    },
+    "candidates": [
+      {
+        "score": 0.4482725262641907,
+        "x_m": 1.175,
+        "y_m": 1.2875,
+        "yaw_deg": 272.5,
+        "span_m": 1.2766993329744698
+      },
+      {
+        "score": 0.2692578136920929,
+        "x_m": 1.175,
+        "y_m": 1.275,
+        "yaw_deg": 272.5,
+        "span_m": 1.0046736625109534
+      },
+      {
+        "score": 0.25356703996658325,
+        "x_m": 0.7375,
+        "y_m": 2.1375,
+        "yaw_deg": 97.5,
+        "span_m": 0.35569903722445667
+      },
+      {
+        "score": 0.24974700808525085,
+        "x_m": 1.7,
+        "y_m": 0.9375,
+        "yaw_deg": 162.5,
+        "span_m": 0.3372542584212133
+      },
+      {
+        "score": 0.24703891575336456,
+        "x_m": 1.475,
+        "y_m": 2.3,
+        "yaw_deg": 275.0,
+        "span_m": 0.5593031870643039
+      }
+    ]
+  },
+  "road-wide": {
+    "result": {
+      "success": false,
+      "reason": "low match score",
+      "score": 0.4797290861606598,
+      "margin": 0.0896599292755127,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "observation_source": null,
+      "building_score": null,
+      "road_score": 0.4797290861606598,
+      "building_coverage": 0.038983481365721676,
+      "road_coverage": 0.09216569146529462,
+      "building_weight": 0.0
+    },
+    "road_diversity": 0.534178753676855,
+    "best": {
+      "score": 0.4797290861606598,
+      "x_m": 1.175,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.2766993329744698
+    },
+    "second": {
+      "score": 0.3900691568851471,
+      "x_m": 0.7375,
+      "y_m": 2.1375,
+      "yaw_deg": 97.5,
+      "span_m": 0.35569903722445667
+    },
+    "candidates": [
+      {
+        "score": 0.4797290861606598,
+        "x_m": 1.175,
+        "y_m": 1.2875,
+        "yaw_deg": 272.5,
+        "span_m": 1.2766993329744698
+      },
+      {
+        "score": 0.3900691568851471,
+        "x_m": 0.7375,
+        "y_m": 2.1375,
+        "yaw_deg": 97.5,
+        "span_m": 0.35569903722445667
+      },
+      {
+        "score": 0.38419270515441895,
+        "x_m": 1.7,
+        "y_m": 0.9375,
+        "yaw_deg": 162.5,
+        "span_m": 0.3372542584212133
+      },
+      {
+        "score": 0.38018760085105896,
+        "x_m": 1.1125,
+        "y_m": 1.4,
+        "yaw_deg": 270.0,
+        "span_m": 0.8119401678144096
+      },
+      {
+        "score": 0.3793463110923767,
+        "x_m": 1.475,
+        "y_m": 2.3,
+        "yaw_deg": 275.0,
+        "span_m": 0.5593031870643039
+      }
+    ]
+  },
+  "adaptive-raw-wide": {
+    "result": {
+      "success": false,
+      "reason": "low match score",
+      "score": 0.37457661805094816,
+      "margin": 0.0764268928454292,
+      "x_m": null,
+      "y_m": null,
+      "yaw_deg": null,
+      "span_m": null,
+      "observation_source": null,
+      "building_score": 0.16939890710382513,
+      "road_score": 0.46250992274257235,
+      "building_coverage": 0.027747395833333334,
+      "road_coverage": 0.08404947916666666,
+      "building_weight": 0.3
+    },
+    "road_diversity": 0.5490481602324024,
+    "best": {
+      "score": 0.37457661805094816,
+      "x_m": 1.175,
+      "y_m": 1.2875,
+      "yaw_deg": 272.5,
+      "span_m": 1.3111466065385293
+    },
+    "second": {
+      "score": 0.29814972520551897,
+      "x_m": 1.2125,
+      "y_m": 1.2125,
+      "yaw_deg": 272.5,
+      "span_m": 1.0317812732077412
+    },
+    "candidates": [
+      {
+        "score": 0.37457661805094816,
+        "x_m": 1.175,
+        "y_m": 1.2875,
+        "yaw_deg": 272.5,
+        "span_m": 1.3111466065385293
+      },
+      {
+        "score": 0.29814972520551897,
+        "x_m": 1.2125,
+        "y_m": 1.2125,
+        "yaw_deg": 272.5,
+        "span_m": 1.0317812732077412
+      },
+      {
+        "score": 0.2757074045761447,
+        "x_m": 1.1125,
+        "y_m": 1.4,
+        "yaw_deg": 270.0,
+        "span_m": 0.8338475381372158
+      },
+      {
+        "score": 0.26729656304984256,
+        "x_m": 1.3875,
+        "y_m": 2.4625,
+        "yaw_deg": 270.0,
+        "span_m": 0.3463538869715102
+      },
+      {
+        "score": 0.26718130233612924,
+        "x_m": 0.7125,
+        "y_m": 2.175,
+        "yaw_deg": 100.0,
+        "span_m": 0.3463538869715102
+      }
+    ]
+  }
+}
